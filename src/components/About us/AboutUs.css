@@ -1,0 +1,1076 @@
+.carrier-top {
+    background-image: url('../static_data/web_content/carrier-top.webp');
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.term-top {
+    background-image: url('../../assets/website/PIC.jpg');
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.semi_list{
+    padding: 0.1rem;
+    list-style: disc;
+    margin-left: 3.5rem;
+}
+.apply-about p{
+    margin-left: 1.5rem;
+}
+.semi-h5{
+    margin: 0;
+}
+.content-title {
+    font-size: 1.5rem;
+    font-weight:bold;
+  }
+  
+  .founder-font {
+    font-size: 1rem;
+    font-weight:bold;
+  }
+.carrier-top-cover {
+    position: relative; /* Required for pseudo-element positioning */
+    background-image: url('../../assets/website/aboutpic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 35vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Ensure content is above the overlay */
+}
+
+.carrier-top-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    z-index: -1; /* Place the overlay behind content */
+}
+.founder-head{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+}
+.title-founder-head{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+.founder-font{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+}
+.about-1{
+    color: #120a0a;
+    font-size: 60px;
+
+}
+
+.carrier-top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.carrier-top-content h1 {
+    color: white;
+}
+
+.carrier-top-content p {
+    font-size: 1.5rem;
+}
+
+.carrier-top-content span {
+    color: rgb(234, 35, 41);
+    font-size: 1.5rem;
+}
+
+.carrier-req {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.carrier-quotes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.carrier-para-head {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.left-carrier-quotes {
+    width: 50%;
+}
+
+.right-carrier-quotes {
+    width: 50%;
+}
+
+.carrier-quotesimage img {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para .quality {
+    margin-top: 1rem;
+}
+
+@media (max-width:700px) {
+    .carrier-quotes {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .carrier-top-cover {
+        position: relative; /* Required for pseudo-element positioning */
+        background-image: url('../../assets/website/aboutpic.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 18vh;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1; /* Ensure content is above the overlay */
+    }
+    .left-carrier-quotes {
+        width: 100%;
+    }
+
+    .right-carrier-quotes {
+        width: 100%;
+    }
+
+    .carrier-quotesimage img {
+        display: none;
+    }
+}
+
+.carrier-picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0rem;
+}
+
+.carrier-pic1 img {
+    width: 100%;
+    height: 40vh;
+}
+
+.employee-satisfy {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.employee-satisfy-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.employee-satisfy-part span {
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+.carrier-apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+.apply-heading {
+    text-align: center;
+    padding: 1rem, 0rem;
+    font-size: 2.5rem;
+}
+
+.apply-content-cover {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 14px 14px 14px 14px rgba(0, 0, 0, 0.279);
+
+}
+
+.apply-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom:2px double gray;
+}
+
+.apply-btn {
+    padding: 5px 20px;
+    border-radius: 3px;
+    background-color: #2e7eed;;
+    color: #fff;
+}
+
+.just-apply{
+    background-color: #2ee3ed;;
+    margin-top: 1rem;
+}
+.btn-apply{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.apply-btn:hover {
+    background: #2075ec00;
+    color: #000;
+}
+
+.domain-content-left h4 {
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media (max-width:600px) {
+    .apply-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+
+    }
+
+    .apply-btn {
+        padding: 14px 25px;
+        border-radius: 3px;
+        background-color: #2e7eed;
+        ;
+        color: #fff;
+    }
+
+}
+
+@media (max-width:700px) {
+
+    .carrier-picture {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0rem;
+    }
+    .carrier-pic1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .employee-satisfy {
+        padding: 3rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employee-satisfy-part span {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .carrier-apply {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+    }
+
+    .apply-content-cover {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 14px 14px 14px 14px rgba(0, 0, 0, 0.279);
+    }
+
+}
+
+/* abouts us */
+.team-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.founded{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.fixed-image {
+    width: 100%; /* Ensures the image fills the card's width */
+    height: 350px; /* Fixed height for consistent dimensions */
+    object-fit: cover; /* Adjusts image aspect ratio while filling the dimensions */
+  }
+.team-intro {
+    /* background: rgb(237, 237, 237); */
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
+    /* border: 2px solid black; */
+    border-radius: 2rem;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(43, 43, 89);
+}
+
+.post {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.team-mate {
+    width: 12rem;
+    height: 12rem;
+    /* border-radius: 50%; */
+}
+
+.style-line {
+    height: 0.5rem;
+    width: 5rem;
+    background: #007aff;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+
+    .name {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .post {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .details-mate {
+        font-size: 0.7rem;
+    }
+
+    .social-link {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        background: #eedede;
+        width: 20px;
+        /* Set the width of your circular element */
+        height: 20px;
+        /* Set the height of your circular element */
+        border-radius: 50%;
+    }
+
+    .team-mate {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+
+    .team-intro {
+        background: rgb(237, 237, 237);
+        padding: 0rem;
+        display: flex;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        /* flex-direction: column; */
+        margin: 1rem 0rem;
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+
+}
+
+.counter {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-count{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .counter-container {
+    width: 75%;
+  }
+  
+  .counter-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+.bg-counter {
+    background: url("../../assets/website/PIC.jpg") no-repeat;
+    background-size: cover;
+}
+
+#features-work {
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+#features-work .block ul li {
+    width: 19%;
+    text-align: center;
+    display: inline-block;
+    padding: 40px 0px;
+}
+
+.text-color {
+    color: #000;
+}
+
+.hide {
+    display: contents;
+}
+
+.ai {
+    color: #007aff;
+    font-size: 2.8rem;
+}
+
+.ai-font {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+}
+
+.align {
+    text-align: justify;
+    display: none;
+
+}
+
+#ch1 {
+    display: none;
+}
+
+#ch2 {
+    display: none;
+}
+
+#ch3 {
+    display: none;
+}
+
+.read-more {
+    color: #ff0000;
+}
+
+
+
+.para-hide {
+    padding: 1rem;
+}
+
+#ch1:checked~.para-hide {
+    display: block;
+}
+
+#ch2:checked~.para-hide {
+    display: block;
+}
+
+#ch3:checked~.para-hide {
+    display: block;
+}
+
+.bg-1 {
+    background: url("../static_data/web_content/aboutus1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.servicesbg-1 {
+    background: url("../../assets/website/PIC.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.potfoliobg-1 {
+    background: url("../../assets/website/PIC.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.service-contact {
+    background: url("../../assets/website/PIC.jpg") no-repeat 50% 50%;
+    background-size: cover
+}
+
+.potfoliobg-cover {
+    background-color: rgba(0, 0, 0, 0.608);
+    height: 35vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-cta-2 {
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 2rem;
+
+}
+
+.about-2 {
+    padding: 4rem;
+    margin-top: 1rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.184);
+}
+
+.about-bg-counter {
+    background: url("../static_data/web_content/aboutus.jpg") no-repeat 50% 50%;
+    background-size: cover;
+
+}
+
+.ceo-quotes {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.creater {
+    padding: 1rem;
+}
+
+.creater h1 {
+    text-align: center;
+}
+
+.cover-ceo {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.125);
+}
+
+.ceo-photo-bg {
+    width: 30%;
+}
+
+.ceo-photo {
+    background: url("../../assets/website/founder.jpg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+.ceo-few {
+    width: 60%;
+}
+
+.about-item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision-detail {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.plus {
+    text-align: right;
+}
+
+.vision-h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #007aff;
+    text-align: right;
+}
+
+.vision-detail:hover {
+    background-color: #edd4d4;
+}
+
+
+@media (max-width:800px) {
+    .ceo-quotes {
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cover-ceo {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+
+    .ceo-photo-bg {
+        width: 100%;
+    }
+
+    .ceo-photo {
+        background: url("../../assets/website/founder.jpg") no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 30vh;
+        width: 100%;
+    }
+    .founded {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    .ceo-few {
+        width: 100%;
+    }
+
+    .about-item-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.service-item {
+    position: relative;
+    padding-left: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item a {
+    margin-top: 1.5rem;
+}
+
+.service-item i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px;
+    font-size: 50px;
+    opacity: 0.4;
+
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+
+}
+
+.service-item:hover i {
+    animation: iconAnimation 0.8s ease-in-out;
+}
+
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+    opacity: 0;
+    border-radius: 10%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.service-item:hover::before {
+    opacity: 1;
+}
+
+.img-slide img {
+    height: 50vh;
+    width: 100%;
+}
+
+.portfolio-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.portfolio-card {
+    padding: 0rem 3rem;
+    width: 80%;
+}
+
+.government {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.government h1 {
+    text-align: center;
+}
+
+.govern {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.govern-card {
+    padding: 1rem;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.184);
+    margin-top: 2rem;
+    border-radius: 15px;
+    width: 25%;
+}
+
+.support-img {
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+}
+
+.support-img img {
+    width: 100%;
+    height: 40vh;
+}
+
+.govern-card p {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.partner {
+    padding: 2rem 1rem;
+}
+
+.partner-heading {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.partner-cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.partner-card {
+    padding: 1rem;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.184);
+    margin-top: 2rem;
+    border-radius: 15px;
+    min-height: 130px;
+}
+
+.partner-cover img {
+    width: 100%;
+    height: 24vh;
+}
+
+.description {
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 0px 4px rgba(0, 0, 0, 0.184);
+}
+
+.discription-cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.front-intro {
+    width: 40%;
+}
+
+.front-intro h3 {
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+.front-intro p {
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    text-align: justify;
+    color: #000;
+
+}
+
+.front-img {
+    width: 40%;
+}
+.modal-img {
+    width: 50%;
+   
+}
+.read-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.apply-details{
+    padding: 2rem;
+}
+.apply-about{
+    padding-bottom:1rem ;
+}
+.apply-list{
+    padding-bottom:0.5rem ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: decimal;
+}
+.apply-list h5{
+    margin-left: 1rem;
+}
+@media (max-width: 550px) {
+    .govern {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .container-count{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+    .govern-card {
+        padding: 1rem;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.184);
+        margin-top: 2rem;
+        border-radius: 15px;
+        width: 80%;
+    }
+    .support-img img {
+        width: 100%;
+        height: 20vh;
+    }
+    .govern-card p {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .partner-cover {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+    }
+
+    .partner-card {
+        padding: 0.5rem;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.184);
+        margin-top: 2rem;
+        border-radius: 15px;
+
+    }
+
+    .partner-cover img {
+        width: 100%;
+        height: 17vh;
+    }
+    .description {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio-card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+
+    .portfolio-card {
+        padding: 0rem;
+        width: 95%;
+    }
+
+    .service-item {
+        position: relative;
+        padding-left: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+@media (max-width:800px) {
+    .ceo-quotes {
+        padding: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cover-ceo {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        color: black;
+    }
+
+    .ceo-photo-bg {
+        width: 100%;
+    }
+
+    .ceo-photo {
+        background: url("../../assets/website/founder.jpg") no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 50vh;
+        width: 100%;
+    }
+    .founded {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    .ceo-few {
+        width: 100%;
+    }
+
+    .about-item-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .discription-cover {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+.front-intro {
+    width: 95%;
+}
+.front-img {
+    width: 90%;
+  margin-top: 1.5rem;
+}
+}
+
+@media (min-width: 512px) and (max-width: 900px) {
+    .support-img img {
+        width: 100%;
+        height: 20vh;
+    }
+    .carrier-top-cover {
+        position: relative; /* Required for pseudo-element positioning */
+        background-image: url('../../assets/website/aboutpic.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 18vh;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1; /* Ensure content is above the overlay */
+    }
+    .govern-card p {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+    .government {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+} 

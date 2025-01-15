@@ -1,0 +1,292 @@
+.logo img{
+  height: 3rem;
+  width: 3rem;
+}
+.homepage-left-item-with-cta-promo_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+ 
+  
+/* Outer box styles */
+.outer-box {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #d9d3d3;
+  box-sizing: border-box;
+  margin-top: 3rem;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Inner box styles */
+.inner-box1,
+.inner-box2 {
+  width: 48%; /* Adjust to ensure proper spacing */
+  height: auto;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 1rem; /* Add spacing for stacked layout */
+}
+
+.inner-box1 {
+  justify-content: left;
+}
+
+.inner-box2 {
+  justify-content: center;
+}
+
+.inner-babybox2 {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: white;
+  background-size: cover;
+}
+
+.inner-babybox2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .outer-box {
+      flex-direction: column; /* Stack the elements vertically */
+      justify-content: center;
+  }
+
+  .inner-box1,
+  .inner-box2 {
+      width: 100%; /* Full width for smaller screens */
+  }
+
+  .inner-babybox2 {
+      height: 50%; /* Adjust height for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .outer-box {
+      padding: 10px;
+  }
+
+  .inner-box1,
+  .inner-box2 {
+      margin-bottom: 0.5rem; /* Adjust spacing for very small screens */
+  }
+
+  .inner-babybox2 {
+      height: auto; /* Allow content to dictate height */
+  }
+
+  .inner-babybox2 img {
+      border-radius: 3px; /* Smaller border radius for compact design */
+  }
+}
+
+  
+  /* Careers Section Styles */
+.careers-section {
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px 15px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .heading {
+    font-size: 26px;
+    font-weight: bold;
+    color: #002e5d; /* Dark Blue color */
+  }
+  
+  .subheading {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555; /* Gray color */
+    margin-top: 10px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  
+  .apply-button {
+    display: inline-block;
+    background-color: #0061f2; /* Blue background */
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-button:hover {
+    background-color: #004bb5; /* Darker blue on hover */
+  }
+  
+  .links {
+    margin-top: 30px;
+  }
+  
+  .link {
+    color: #0061f2;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #004bb5; /* Darker blue on hover */
+  }
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .counter-container {
+    width: 75%;
+  }
+  
+  .counter-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .headingcounter-text {
+    margin:10px; 
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .brandlogo{
+    margin: 2.5rem 0rem;
+  }
+  /* General Section Styling */
+.section {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.mcb-section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrap {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.wrap:hover {
+  transform: translateY(-10px);
+}
+
+.mcb-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Slick Slider specific styling */
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  color: #333;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+}
+
+.slick-prev, .slick-next {
+  font-size: 0;
+  color: transparent;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 30px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wrap {
+    padding: 20px;
+  }
+
+  .mcb-section-inner {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 15px;
+  }
+}
