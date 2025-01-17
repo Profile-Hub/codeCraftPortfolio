@@ -50,7 +50,7 @@ const Navbar = () => {
             <span className="material-symbols-outlined  phone gmail">
               mail
             </span>
-            <a href="contact@codecreft.com" className='pointer'>contact@codecreft.com</a>
+            <a href="mailto:sanjit@needadonor.com" className="pointer">contact@codecraft.com</a>
 
           </li>
           <li className='email'>
@@ -64,14 +64,15 @@ const Navbar = () => {
         <div id="navbar" >
           <div className="container">
             <div className="row">
-              <div className="col-lg-12">
+              <div className="nav-show">
                 <nav className="navbar navbar-expand-lg px-0 py-2">
                   <div className='logo-cover'>
                     <Link to='/' className="navbar-brand navlogo  " >
-                    <img src={Logo} alt="" className="w-5" />
-                        <div className="text-2xl sm:text-3xl font-semibold">
+                    <img src={Logo} alt="" className="w-5"  style={{ width: "3.25rem" }} />
+                        <div className="text-2xl sm:text-3xl font-semibold logoname">
                           Code Craft
                         </div>
+                        
                     </Link>
                    
                   </div>
@@ -95,7 +96,8 @@ const Navbar = () => {
 
                     </div>
                    
-                  </div> <button className="navbar-toggler collapsed" onClick={() => setMedia(!showMedia)} type="button" data-toggle="collapse" data-target="#navbarsExample09"
+                  </div> 
+                  <button className="navbar-toggler collapsed" onClick={() => setMedia(!showMedia)} type="button" data-toggle="collapse" data-target="#navbarsExample09"
                       aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation" >{showMedia ?
                         (<span className="material-symbols-outlined">
                           dangerous
@@ -104,6 +106,7 @@ const Navbar = () => {
                         </span>)}
                     </button>
                 </nav>
+               
               </div>
             </div>
           </div>
