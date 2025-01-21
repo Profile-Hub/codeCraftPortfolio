@@ -1,16 +1,14 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState } from 'react';
 import ScrollTrigger from 'react-scroll-trigger';
 import CountUp from 'react-countup';
-
 import Slider from 'react-slick';
-import profile from '../../assets/website/shubham2crop.png'
-import profilerishu from '../../assets/website/rishu.jpg'
-import sidepic from '../../assets/website/fullfig.jpg'
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+import profile from '../../assets/website/shubham2crop.png';
+import profilerishu from '../../assets/website/rishu.jpg';
+import sidepic from '../../assets/website/fullfig.jpg';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import LazyLoad from 'react-lazyload';
-import "./AboutUs.css"
+import "./AboutUs.css";
 import { FaBullseye, FaEye, FaCogs } from 'react-icons/fa';
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 
@@ -20,7 +18,7 @@ const skillsData = [
     icon: <FaBullseye className="text-4xl text-primary" />,
     link: "#",
     description:
-      "At Code Craft Consulting, our mission is to foster innovation and drive progress in software development since our establishment. Guided by an unwavering commitment to quality, we excel in designing Python-driven analytical tools and real-time monitoring systems that form the foundation of our technological pursuits. Our expertise lies in delivering state-of-the-art solutions . We aim to empower businesses and individuals with intelligent software solutions that go beyond expectations, enhancing productivity and enabling progress across various industries. With a steadfast focus on technological excellence and a dedication to creating impactful solutions, we strive to lead transformative advancements, shaping the future through creativity, innovation, and exceptional software development.",
+      "At Code Craft Consulting, our mission is to foster innovation and drive progress in software development. We are committed to delivering Python-driven analytical tools and real-time monitoring systems, which serve as the foundation of our technological advancements. By creating impactful software solutions, we empower businesses and individuals to enhance productivity and achieve progress across various industries. With a focus on technological excellence, we aim to shape the future through creativity, innovation, and exceptional software development.",
     aosDelay: "0",
   },
   {
@@ -28,7 +26,7 @@ const skillsData = [
     icon: <FaEye className="text-4xl text-primary" />,
     link: "#",
     description:
-      "At Code Craft Consulting, our vision is to be a pioneer in the software development industry, driving continuous progress through groundbreaking solutions since our inception. We envision a future where technology is deeply woven into everyday life, with software-based analytical tools and real-time monitoring applications serving as key drivers of positive change. We position ourselves as a symbol of technological excellence, and problem-solving across various industries. Our commitment goes beyond the present, anticipating future needs and challenges, and delivering software solutions that not only address today's demands but also pave the way for tomorrow’s advancements, contributing to a global impact and societal progress through the transformative power of technology.",
+      "Our vision at Code Craft Consulting is to be a leader in the software development industry, delivering groundbreaking solutions that seamlessly integrate into daily life. We aim to create software-based analytical tools and real-time monitoring applications that drive positive change. By anticipating future challenges and needs, we strive to provide solutions that address current demands while paving the way for tomorrow’s advancements, making a global impact and contributing to societal progress.",
     aosDelay: "300",
   },
   {
@@ -36,35 +34,34 @@ const skillsData = [
     icon: <FaCogs className="text-4xl text-primary" />,
     link: "#",
     description:
-      "At Code Craft Consulting, our approach is driven by an unwavering dedication to advancing progress through constant innovation in software development since our founding. We set ourselves apart by strategically utilizing Python-based analytical tools and real-time monitoring applications, viewing them as essential drivers of technological breakthroughs.We place great emphasis on remaining ahead of technological trends, ensuring our software not only meets the industry's current needs but also anticipates future demands. Through a proactive and visionary mindset, we strive to deliver solutions that not only tackle immediate challenges but also empower our clients and users to succeed in a rapidly evolving technological world."
-    , aosDelay: "500",
+      "At Code Craft Consulting, we prioritize innovation and strategic problem-solving in software development. By leveraging Python-based analytical tools and real-time monitoring applications, we remain at the forefront of technological advancements. Our proactive approach ensures that our solutions not only meet industry needs but also anticipate future demands. Through this visionary mindset, we empower our clients to succeed in an ever-evolving technological landscape.",
+    aosDelay: "500",
   },
-
 ];
+
 const Aboutus = () => {
   const [counter, setCounter] = useState(false);
-   const [count, setcount] = useState(false);
-  var settings_client = {
+  const [count, setCount] = useState(false);
+
+  const settings_client = {
     dots: false,
     speed: 1500,
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-
   };
+
   return (
     <div>
-
       {/* Section content part start */}
-      <section className=" bg-1">
-        <div className='carrier-top-cover' >
+      <section className="bg-1">
+        <div className="carrier-top-cover">
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <div className="block text-center  mb-4" data-aos="fade-up">
-                  <h1 className="about-1  text-white">About Us</h1>
-                  <span className=" text-white "></span>
-
+                <div className="block text-center mb-4" data-aos="fade-up">
+                  <h1 className="about-1 text-white">About Us</h1>
+                  <span className="text-white"></span>
                   <p></p>
                 </div>
               </div>
@@ -75,29 +72,47 @@ const Aboutus = () => {
       {/* section content part end */}
 
       {/* Section A part start */}
-      <section className="section  ">
+      <section className="section">
         <div className="container">
           <div className="row flex justify-center items-center">
             <div className="col-lg-5">
-
-              <div className="about-item md:pr-3 mb-5 mb-lg-0 md:px-3 " data-aos="fade-up">
-                <h2><span className="h5 text-color mb-3">What We Do:</span></h2>
-                <h2 className="my-3 position-relative content-title ">We work with the softwere to User with their Solve daily life problem</h2>
-                <p className="mb-3">I
-                  At <strong>Code Craft Consulting</strong>, we specialize in delivering cutting-edge software solutions and
-                  world-class consulting services tailored to meet the unique needs of businesses worldwide. Our expertise includes
-                  custom software development to streamline operations and drive growth, user-centric web and mobile app development
-                  designed for performance and scalability, Software as a Product (SaaP) solutions to address common business challenges,
-                  and technology consulting to guide businesses in adopting the right tools and strategies for maximum impact.
-                  With a passion for innovation and a commitment to excellence, we empower our clients to thrive in an ever-evolving digital landscape.
+              <div className="about-item md:pr-3 mb-5 mb-lg-0 md:px-3" data-aos="fade-up">
+                <h2>
+                  <span className="h5 text-color mb-3">What We Do:</span>
+                </h2>
+                <h2 className="my-3 position-relative content-title">
+                  We create software to solve daily life problems.
+                </h2>
+                <p className="mb-3">
+                  At <strong>Code Craft Consulting</strong>, we specialize in delivering cutting-edge software
+                  solutions and world-class consulting services tailored to meet the unique needs of businesses
+                  worldwide. Our expertise includes custom software development to streamline operations and
+                  drive growth, user-centric web and mobile app development designed for performance and scalability,
+                  Software as a Product (SaaP) solutions to address common business challenges, and technology
+                  consulting to guide businesses in adopting the right tools and strategies for maximum impact.
+                  With a passion for innovation and a commitment to excellence, we empower our clients to thrive
+                  in an ever-evolving digital landscape.
                 </p>
-                <a href="https://youtube.com/playlist?list=PLPXLxMmLRj-Ia_sqcsx6DGK__88I0SIUc&si=K1el360woew-sYAJ" target="_blank" className="btn btn-main btn-round-full">Explore</a>
-
+                <a
+                  href="https://youtube.com/playlist?list=PLPXLxMmLRj-Ia_sqcsx6DGK__88I0SIUc&si=K1el360woew-sYAJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-main btn-round-full"
+                >
+                  Explore
+                </a>
               </div>
             </div>
             <div className="col-lg-5 flex justify-center items-center" data-aos="fade-up">
               <div className="flex justify-center items-center">
-                <LazyLoad placeholder={<Skeleton min-width={240} min-height={240} />}><img loading="lazy" src={sidepic} alt="about-image" className="img-fluid" /></LazyLoad>
+                <LazyLoad placeholder={<Skeleton width={240} height={240} />}>
+                  <img
+                    loading="lazy"
+                    src={sidepic}
+                    alt="About Us"
+                    className="img-fluid"
+                  />
+                </LazyLoad>
               </div>
             </div>
           </div>
@@ -115,21 +130,24 @@ const Aboutus = () => {
             <div className='ceo-photo'>
 
             </div></div>
-          <div className='ceo-few p-3'>
-            <h3 className="mt-2 mb-1 position-relative content-title text-gray founder-head">Innovation and Stability Do Not Coexist</h3>
-            <p className="mb-1"> At <strong>Code Craft Consulting</strong>, we understand that pursuing
+            <div className='ceo-few p-3'>
+            <h3 className="mt-2 mb-1 position-relative content-title text-gray founder-head">
+              Innovation and Stability Do Not Coexist
+            </h3>
+            <p className="mb-1">
+              At <strong>Code Craft Consulting</strong>, we understand that pursuing
               groundbreaking innovation often requires stepping out of comfort zones. This reflects the profound
-              realization that while it's impossible to achieve everything at once, prioritizing what truly aligns
-              with our mission and values is key. Our approach emphasizes focusing on transformative solutions that
+              realization that, while achieving everything at once is impossible, prioritizing what truly aligns
+              with our mission and values is crucial. Our approach emphasizes focusing on transformative solutions that
               matter most to our clients, ensuring meaningful and lasting impact. By aligning our efforts with what
-              genuinely drives value for businesses, we inspire a journey of growth and achievement, reminding us that
-              true progress stems from embracing challenges and staying focused on what matters most.
+              genuinely drives value for businesses, we foster a journey of growth and achievement. This reminds us that
+              true progress comes from embracing challenges and staying focused on what matters most.
             </p>
 
             <h2 className="mt-2 mb-1 position-relative content-title text-gray name-font content-title">Sanjit Singh</h2>
             <p className='text-gray founder-font founder-font'>Founder</p>
-
           </div>
+
         </div>
       </div>
 

@@ -36,10 +36,8 @@ const Footer = () => {
               Code Craft Consulting
             </h1>
             <p className="text-sm">
-              Your trusted partner in creating custom applications and websites
-              that combine innovation, functionality, and design excellence.
-              Revolutionize your brand with software solutions and web services
-              designed to maximize efficiency and amplify impact.
+            We are your trusted partner in creating custom applications and websites that combine innovation, functionality, and design excellence.
+            Revolutionize your brand with software solutions and web services crafted to maximize efficiency and amplify impact.
             </p>
             <br />
             {/* Social Handles */}
@@ -50,7 +48,7 @@ const Footer = () => {
               <a href="#">
                 <FaFacebook className="text-2xl hover:text-primary duration-300" />
               </a>
-              <a href="https://www.linkedin.com/company/code-craft-consulting/about/">
+              <a href="https://www.linkedin.com/company/code-craft-consulting/about/" target="blank">
                 <FaLinkedin className="text-2xl hover:text-primary duration-300" />
               </a>
             </div>

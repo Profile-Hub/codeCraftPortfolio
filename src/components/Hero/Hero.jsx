@@ -29,11 +29,11 @@ const Hero = () => {
        aosDelay: "300",
      },
       {
-       name: "IOS Based Software Devlropment",
+       name: "iOS-Based Software Development",
        icon: <SlNote className="text-4xl text-primary" />,
        link: "#",
        description:
-        "At Code Craft Consulting, we specialize in cutting-edge iOS software development tailored to meet the unique needs of businesses in a rapidly evolving digital landscape. Our team of expert developers leverages the latest tools, technologies, and frameworks in the Apple ecosystem, Trust Code Craft Consulting to transform your vision into a polished, user-centric app designed to thrive on iPhones, iPads, and the entire Apple platform.",
+        "At Code Craft Consulting, we specialize in cutting-edge iOS software development tailored to meet the unique needs of businesses in a rapidly evolving digital landscape. Our team of expert developers leverages the latest tools, technologies, and frameworks in the Apple ecosystem. Trust Code Craft Consulting to transform your vision into a polished, user-centric app designed to thrive on iPhones, iPads, and the entire Apple platform.",
         aosDelay: "700",
      }, 
      {
@@ -98,7 +98,7 @@ Revolutionize your brand with software solutions and web services designed to ma
         onEnter={() => setcount(true)}
         onExit={() => setcount(false)}
       >
-        <h1 className="text-center headingcounter-text">Achivement</h1>
+        <h1 className="text-center headingcounter-text">Achievement</h1>
         <section className="section counter">
         
           <div className="counter-container  py-12">
@@ -112,7 +112,7 @@ Revolutionize your brand with software solutions and web services designed to ma
                   </span>{" "}
                   +
                 </h3>
-                <p className="text-gray-500">Project Order</p>
+                <p className="text-gray-500">Projects Ordered</p>
               </div>
               <div className="counter-item text-center mb-5 sm:mb-0">
                 <h3 className="mb-0">

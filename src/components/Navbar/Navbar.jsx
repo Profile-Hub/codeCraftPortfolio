@@ -39,7 +39,8 @@ const Navbar = () => {
           <li className='email'>
 
 
-            <a href="https://wa.me/9654596349?text=Hello%20from%20your%20website" target="_blank">
+            <a href="https://wa.me/919654596949?text=Hello%20from%20your%20website
+" target="_blank">
               <i className="fa-brands fa-whatsapp what phone "></i>  <button>Contact Us on WhatsApp</button>
             </a>
 
@@ -50,7 +51,7 @@ const Navbar = () => {
             <span className="material-symbols-outlined  phone gmail">
               mail
             </span>
-            <a href="mailto:sanjit@needadonor.com" className="pointer">contact@codecraft.com</a>
+            <a href="mailto:sanjit@codecraftconsulting.in" className="pointer">sanjit@codecraftconsulting.in</a>
 
           </li>
           <li className='email'>
@@ -70,7 +71,7 @@ const Navbar = () => {
                     <Link to='/' className="navbar-brand navlogo  " >
                     <img src={Logo} alt="" className="w-5"  style={{ width: "3.25rem" }} />
                         <div className="text-2xl sm:text-3xl font-semibold logoname">
-                          Code Craft
+                          Code Craft Consulting 
                         </div>
                         
                     </Link>
