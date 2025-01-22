@@ -43,7 +43,7 @@ const Navbar = () => {
           </li>
           <li className="email">
             <span className="material-symbols-outlined phone gmail">mail</span>
-            <a href="mailto:sanjit@codecraftconsulting.in" className="pointer">sanjit@codecraftconsulting.in</a>
+            <a href="mailto:support@codecraftconsulting.in" className="pointer">support@codecraftconsulting.in</a>
           </li>
           <li className="email">
             <span className="material-symbols-outlined phone call">call</span>
