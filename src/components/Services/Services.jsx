@@ -216,7 +216,7 @@ const Services = () => {
             data-aos-offset="0"
             className="text-center mt-4 sm:mt-8"
           >
-            <button className="primary-btn">Learn More</button>
+            {/* <button className="primary-btn">Learn More</button> */}
 
             <BrandsLogo />
 
@@ -233,10 +233,10 @@ const Services = () => {
                     </p>
                            <Link to="/contact-us" className="apply-button">Contact us</Link>
                    
-                    <div className="links">
+                    {/* <div className="links">
                       <a href="#bring-your-best" className="link">BRING YOUR BEST SELF TO WORK</a>
                       <a href="#explore-careers" className="link">EXPLORE THE CAREERS BLOG</a>
-                    </div>
+                    </div> */}
                   </div>
                 </section>
 
