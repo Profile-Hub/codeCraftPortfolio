@@ -78,21 +78,21 @@ const Hero = () => {
               className="text-4xl sm:text-5xl font-semibold"
               style={{ lineHeight: 1.2 }}
             >
-              Building Brands in the{" "}
+              Building Brands at{" "}
               <span className="text-primary">Code Craft Consulting</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
             Your trusted partner in creating custom applications and websites that combine innovation, functionality, and design excellence.
 Revolutionize your brand with software solutions and web services designed to maximize efficiency and amplify impact.
             </p>
-            <button
+            {/* <button
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-offset="0"
               className="primary-btn"
             >
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -196,7 +196,7 @@ Revolutionize your brand with software solutions and web services designed to ma
             data-aos-offset="0"
             className="text-center mt-4 sm:mt-8"
           >
-            <button className="primary-btn">Learn More</button>
+            {/* <button className="primary-btn">Learn More</button> */}
           
               <BrandsLogo />
 
@@ -212,10 +212,10 @@ Revolutionize your brand with software solutions and web services designed to ma
           We're dedicated to helping our clients do amazing things and unlocking the potential of those who advance the world. Join us, and you can too.
         </p>
         <Link to="/contact-us" className="apply-button">Contact us</Link>
-        <div className="links">
-          <a href="#bring-your-best" className="link">BRING YOUR BEST SELF TO WORK</a>
+        {/* <div className="links">
+          <p href="#bring-your-best" className="link">BRING YOUR BEST SELF TO WORK</a>
           <a href="#explore-careers" className="link">EXPLORE THE CAREERS BLOG</a>
-        </div>
+        </div> */}
       </div>
     </section>
 
