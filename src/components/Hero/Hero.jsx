@@ -78,7 +78,7 @@ const Hero = () => {
               className="text-4xl sm:text-5xl font-semibold"
               style={{ lineHeight: 1.2 }}
             >
-              Building Brands in the{" "}
+              Building Brands at{" "}
               <span className="text-primary">Code Craft Consulting</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
