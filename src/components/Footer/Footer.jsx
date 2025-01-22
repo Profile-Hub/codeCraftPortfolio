@@ -11,8 +11,8 @@ const FooterLinks = [
 const HelpLinks = [
   { title: "Customer Support", link: "/#support" },
   { title: "Delivery Details", link: "/#delivery-details" },
-  { title: "Terms & Conditions", link: "/#terms" },
-  { title: "Privacy Policy", link: "/#policy" },
+  { title: "Terms & Conditions", link: "/term-Condition" },
+  { title: "Privacy Policy", link: "/Privacy-Policy" },
 ];
 
 const ResourcesLinks = [
