@@ -9,12 +9,14 @@ import { SlNote } from "react-icons/sl";
 import serviceImg from '../../assets/website/download (1).jpg'
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 import { Link } from "react-router-dom";
+import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices } from "react-icons/md";
 const Hero = () => {
    const [count, setcount] = useState(false);
+  
    const skillsData = [
      {
        name: "App Development",
-       icon: <FaCameraRetro className="text-4xl text-primary" />,
+       icon: <MdDeveloperMode className="text-4xl text-primary" />, 
        link: "#",
        description:
          "An app developer specializes in designing, creating, and maintaining mobile and web applications. With a focus on user experience, functionality, and performance, they transform ideas into intuitive, scalable, and secure digital solutions. From concept to deployment, app developers leverage cutting-edge technologies and frameworks to deliver customized apps that meet unique business or individual needs.",
@@ -22,23 +24,23 @@ const Hero = () => {
      },
      {
        name: "Web Designing",
-       icon: <GiNotebook className="text-4xl text-primary" />,
+       icon: <MdWeb className="text-4xl text-primary" />, 
        link: "#",
        description:
-        "Web designing is the art and science of creating visually appealing, user-friendly, and responsive websites. It combines elements of graphic design, layout, and coding to craft digital experiences that are both functional and engaging. A web designer focuses on aesthetics, navigation, and compatibility to ensure websites are accessible across devices, optimized for performance, and aligned with the brand’s identity and goals.",
+         "Web designing is the art and science of creating visually appealing, user-friendly, and responsive websites. It combines elements of graphic design, layout, and coding to craft digital experiences that are both functional and engaging. A web designer focuses on aesthetics, navigation, and compatibility to ensure websites are accessible across devices, optimized for performance, and aligned with the brand’s identity and goals.",
        aosDelay: "300",
      },
-      {
-       name: "iOS-Based Software Development",
-       icon: <SlNote className="text-4xl text-primary" />,
+     {
+       name: "Cloud Cost Reduction",
+       icon: <MdCloudQueue className="text-4xl text-primary" />, 
        link: "#",
        description:
-        "At Code Craft Consulting, we specialize in cutting-edge iOS software development tailored to meet the unique needs of businesses in a rapidly evolving digital landscape. Our team of expert developers leverages the latest tools, technologies, and frameworks in the Apple ecosystem. Trust Code Craft Consulting to transform your vision into a polished, user-centric app designed to thrive on iPhones, iPads, and the entire Apple platform.",
-        aosDelay: "700",
-     }, 
+         "At Code Craft Consulting, we specialize in helping businesses optimize their cloud infrastructure to reduce costs without compromising performance. Our team of experts analyzes your current cloud usage, identifies inefficiencies, and implements strategies to minimize expenses while ensuring scalability and reliability. By leveraging advanced tools and best practices, we ensure your cloud operations are both cost-effective and future-ready. Trust Code Craft Consulting to deliver measurable savings and enhanced cloud efficiency for your organization.",
+       aosDelay: "700",
+     },
      {
        name: "Graphic Designing",
-       icon: <SlNote className="text-4xl text-primary" />,
+       icon: <MdDesignServices className="text-4xl text-primary" />,
        link: "#",
        description:
          "Graphic designing is the creative process of visual communication using typography, imagery, colors, and layouts to convey messages effectively. It involves crafting designs for various mediums, including print, digital, and branding materials, to captivate audiences and enhance brand identity. A graphic designer combines artistic skills and technical expertise to create logos, advertisements, social media visuals, and more, transforming ideas into impactful visual content.",

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './app.css'
+
 // Component importimport AOS from "aos";
 import { BrowserRouter as Router, Route, Routes , useLocation} from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
