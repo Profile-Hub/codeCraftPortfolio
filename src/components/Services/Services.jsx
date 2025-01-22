@@ -22,40 +22,40 @@ import slideimg7 from "../../assets/brands/filter.png";
 
 import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices } from "react-icons/md";
 const skillsData = [
-  {
-    name: "App Development",
-    icon: <MdDeveloperMode className="text-4xl text-primary" />, 
-    link: "#",
-    description:
-      "An app developer specializes in designing, creating, and maintaining mobile and web applications. With a focus on user experience, functionality, and performance, they transform ideas into intuitive, scalable, and secure digital solutions. From concept to deployment, app developers leverage cutting-edge technologies and frameworks to deliver customized apps that meet unique business or individual needs.",
-    aosDelay: "0",
-  },
-  {
-    name: "Web Designing",
-    icon: <MdWeb className="text-4xl text-primary" />, 
-    link: "#",
-    description:
-      "Web designing is the art and science of creating visually appealing, user-friendly, and responsive websites. It combines elements of graphic design, layout, and coding to craft digital experiences that are both functional and engaging. A web designer focuses on aesthetics, navigation, and compatibility to ensure websites are accessible across devices, optimized for performance, and aligned with the brand’s identity and goals.",
-    aosDelay: "300",
-  },
-  {
-    name: "Cloud Cost Reduction",
-    icon: <MdCloudQueue className="text-4xl text-primary" />, 
-    link: "#",
-    description:
-      "At Code Craft Consulting, we specialize in helping businesses optimize their cloud infrastructure to reduce costs without compromising performance. Our team of experts analyzes your current cloud usage, identifies inefficiencies, and implements strategies to minimize expenses while ensuring scalability and reliability. By leveraging advanced tools and best practices, we ensure your cloud operations are both cost-effective and future-ready. Trust Code Craft Consulting to deliver measurable savings and enhanced cloud efficiency for your organization.",
-    aosDelay: "700",
-  },
-  {
-    name: "Graphic Designing",
-    icon: <MdDesignServices className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "Graphic designing is the creative process of visual communication using typography, imagery, colors, and layouts to convey messages effectively. It involves crafting designs for various mediums, including print, digital, and branding materials, to captivate audiences and enhance brand identity. A graphic designer combines artistic skills and technical expertise to create logos, advertisements, social media visuals, and more, transforming ideas into impactful visual content.",
-    aosDelay: "500",
-  },
-
-];
+     {
+       name: "App Development",
+       icon: <MdDeveloperMode className="text-4xl text-primary" />, 
+       link: "#",
+       description:
+       "Code Craft Consulting specializes in web development services, focusing on designing, building, and maintaining high-performance, scalable, and secure websites and web applications. We work closely with clients to understand their unique business needs, functionality, and performance. From custom website design to full-stack development, we leverage the latest technologies and frameworks to create dynamic, responsive, and user-friendly websites. Our team ensures that every project aligns with business goals, is optimized for speed, and provides a seamless experience across all devices."
+        ,aosDelay: "0",
+     },
+     {
+       name: "Web Designing",
+       icon: <MdWeb className="text-4xl text-primary" />, 
+       link: "#",
+       description:
+       "Code Craft Consulting offers comprehensive web development services to build dynamic, secure, and scalable websites tailored to meet unique business needs. Combining cutting-edge technologies and industry best practices, our team specializes in creating responsive, user-friendly, and high-performance websites. From front-end development with sleek, intuitive interfaces to robust back-end solutions, we ensure seamless functionality and integration. Our expertise includes custom web applications, all designed to align with your brand identity, optimize user experience, and drive growth."
+        ,aosDelay: "300",
+     },
+     {
+       name: "Cloud Cost Reduction",
+       icon: <MdCloudQueue className="text-4xl text-primary" />, 
+       link: "#",
+       description:
+         "At Code Craft Consulting, we specialize in helping businesses optimize their cloud infrastructure to reduce costs without compromising performance. Our team of experts analyzes your current cloud usage, identifies inefficiencies, and implements strategies to minimize expenses while ensuring scalability and reliability. By leveraging advanced tools and best practices, we ensure your cloud operations are both cost-effective and future-ready. Trust Code Craft Consulting to deliver measurable savings and enhanced cloud efficiency for your organization.",
+       aosDelay: "700",
+     },
+     {
+       name: "QA and Automationg",
+       icon: <MdDesignServices className="text-4xl text-primary" />,
+       link: "#",
+       description:
+       "A QA and Automation specialist focuses on ensuring software quality through meticulous testing and automated processes. They design and implement testing strategies to identify and resolve issues, ensuring optimal performance, security, and functionality. By leveraging advanced tools and methodologies, they streamline workflows, integrate with CI/CD pipelines, and maintain compliance with industry standards. From planning to execution, QA and Automation experts enhance reliability and efficiency, delivering seamless and dependable digital solutions tailored to specific business needs."
+       ,  aosDelay: "500",
+     },
+   
+   ];
 const Services = () => {
   const settings_client = {
     dots: false,
