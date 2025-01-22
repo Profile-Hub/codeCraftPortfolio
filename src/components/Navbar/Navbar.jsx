@@ -35,32 +35,21 @@ const Navbar = () => {
     <div>
       <div className="navigate">
 
-        <ul className='nav'>
-          <li className='email'>
-
-
-            <a href="https://wa.me/919654596949?text=Hello%20from%20your%20website
-" target="_blank">
-              <i className="fa-brands fa-whatsapp what phone "></i>  <button>Contact Us on WhatsApp</button>
-            </a>
-
-
-          </li>
-          <li className='email'>
-
-            <span className="material-symbols-outlined  phone gmail">
-              mail
-            </span>
-            <a href="mailto:sanjit@codecraftconsulting.in" className="pointer">sanjit@codecraftconsulting.in</a>
-
-          </li>
-          <li className='email'>
-            <span className="material-symbols-outlined phone call">
-              call
-            </span > <a href="tel:96545 96949" className='pointer text-gray-700'>Call Us : +91 9654596949
-            </a>
-          </li>
-        </ul>
+      <ul className="nav">
+  <li className="email">
+    <a href="https://wa.me/919654596949?text=Hello%20from%20your%20website" target="_blank">
+      <i className="fab fa-whatsapp fa-brands what phone"></i> <button>Contact Us on WhatsApp</button>
+    </a>
+  </li>
+  <li className="email">
+    <span className="material-symbols-outlined phone gmail">mail</span>
+    <a href="mailto:sanjit@codecraftconsulting.in" className="pointer">sanjit@codecraftconsulting.in</a>
+  </li>
+  <li className="email">
+    <span className="material-symbols-outlined phone call">call</span> 
+    <a href="tel:+919654596949" className="pointer text-gray-700">Call Us: +91 9654596949</a>
+  </li>
+</ul>
 
         <div id="navbar" >
           <div className="container">
