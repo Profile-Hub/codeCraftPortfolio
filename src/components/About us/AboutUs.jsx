@@ -40,8 +40,7 @@ const skillsData = [
 ];
 
 const Aboutus = () => {
-  const [counter, setCounter] = useState(false);
-  const [count, setCount] = useState(false);
+  const [count, setcount] = useState(false);
 
   const settings_client = {
     dots: false,
@@ -153,12 +152,11 @@ const Aboutus = () => {
 
       {/* Section B part End */}
 
-      {/* Section C part start */}
       <ScrollTrigger
         onEnter={() => setcount(true)}
         onExit={() => setcount(false)}
       >
-        <h1 className="text-center headingcounter-text">Achivement</h1>
+        <h1 className="text-center headingcounter-text">Achievement</h1>
         <section className="section counter">
         
           <div className="counter-container  py-12">
@@ -172,7 +170,7 @@ const Aboutus = () => {
                   </span>{" "}
                   +
                 </h3>
-                <p className="text-gray-500">Project Order</p>
+                <p className="text-gray-500">Projects Ordered</p>
               </div>
               <div className="counter-item text-center mb-5 sm:mb-0">
                 <h3 className="mb-0">
