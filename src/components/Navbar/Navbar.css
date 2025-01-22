@@ -10,7 +10,12 @@
   background-color: rgb(228, 244, 253);
   font-family: "Roboto", sans-serif;
 }
-
+.logoname {
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  line-height: 1.2; 
+  max-width: 100%; 
+}
 .email {
   display: flex;
   padding: 0vh 2vh;
@@ -98,6 +103,7 @@
 }
 .navlogo{
   display: flex;
+ 
 }
 .btn-main {
   padding: 7px 22px;
