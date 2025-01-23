@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ScrollToSupport from '../BrandsLogo/scrollToTop'
 const Termcondition = () => {
   return (
     <div>
@@ -126,6 +126,7 @@ const Termcondition = () => {
                     </div>
                 </div>
             </div>
+            <ScrollToSupport/>
     </div>
   )
 }

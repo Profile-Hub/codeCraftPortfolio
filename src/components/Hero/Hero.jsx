@@ -10,9 +10,9 @@ import serviceImg from '../../assets/website/download (1).jpg'
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 import { Link } from "react-router-dom";
 import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices } from "react-icons/md";
+import SupportModal from "../BrandsLogo/SupportModal";
 const Hero = () => {
    const [count, setcount] = useState(false);
-  
    const skillsData = [
      {
        name: "App Development",

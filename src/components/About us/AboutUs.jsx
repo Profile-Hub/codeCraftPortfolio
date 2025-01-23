@@ -10,7 +10,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import LazyLoad from 'react-lazyload';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "./AboutUs.css";
-
+import ScrollToSupport from '../BrandsLogo/scrollToTop';
 import { FaBullseye, FaEye, FaCogs } from 'react-icons/fa';
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 
@@ -386,7 +386,7 @@ const Aboutus = () => {
 </div>
       </div>
 
-
+      <ScrollToSupport/>
       {/* Section E part End */}
 
 
