@@ -56,16 +56,20 @@ const Navbar = () => {
             <div className="row">
               <div className="nav-show">
                 <nav className="navbar navbar-expand-lg px-0 py-2">
-                  <div className='logo-cover'>
-                    <Link to='/' className="navbar-brand navlogo  " >
-                      <img src={Logo} alt="" className="w-5" style={{ width: "3.25rem" }} />
+                <div className="logo-cover">
+                    <Link to="/" className="navbar-brand navlogo flex items-center">
+                      <img
+                        src={Logo}
+                        alt=""
+                        className="w-5"
+                        style={{ width: "3.25rem", marginRight: "0.75rem" }} 
+                      />
                       <div className="text-2xl sm:text-3xl font-semibold logoname whitespace-normal">
                         Code Craft Consulting
                       </div>
-
                     </Link>
-
                   </div>
+
 
 
                   <div className='nav-list'>

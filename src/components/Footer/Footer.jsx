@@ -95,7 +95,7 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
-              <div className="py-8 px-4">
+              {/* <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
                   Resources
                 </h1>
@@ -122,7 +122,7 @@ const Footer = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
