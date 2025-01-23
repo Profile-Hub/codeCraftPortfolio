@@ -12,80 +12,80 @@ import { Link } from "react-router-dom";
 import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices } from "react-icons/md";
 import SupportModal from "../BrandsLogo/SupportModal";
 const Hero = () => {
-   const [count, setcount] = useState(false);
-   const skillsData = [
-     {
-       name: "App Development",
-       icon: <MdDeveloperMode className="text-4xl text-primary" />, 
-       link: "#",
-       description:
-       "Code Craft Consulting specializes in web development services, focusing on designing, building, and maintaining high-performance, scalable, and secure websites and web applications. We work closely with clients to understand their unique business needs, functionality, and performance. From custom website design to full-stack development, we leverage the latest technologies and frameworks to create dynamic, responsive, and user-friendly websites. Our team ensures that every project aligns with business goals, is optimized for speed, and provides a seamless experience across all devices."
-        ,aosDelay: "0",
-     },
-     {
-       name: "Web Designing",
-       icon: <MdWeb className="text-4xl text-primary" />, 
-       link: "#",
-       description:
-       "Code Craft Consulting offers comprehensive web development services to build dynamic, secure, and scalable websites tailored to meet unique business needs. Combining cutting-edge technologies and industry best practices, our team specializes in creating responsive, user-friendly, and high-performance websites. From front-end development with sleek, intuitive interfaces to robust back-end solutions, we ensure seamless functionality and integration. Our expertise includes custom web applications, all designed to align with your brand identity, optimize user experience, and drive growth."
-        ,aosDelay: "300",
-     },
-     {
-       name: "Cloud Cost Reduction",
-       icon: <MdCloudQueue className="text-4xl text-primary" />, 
-       link: "#",
-       description:
-         "At Code Craft Consulting, we specialize in helping businesses optimize their cloud infrastructure to reduce costs without compromising performance. Our team of experts analyzes your current cloud usage, identifies inefficiencies, and implements strategies to minimize expenses while ensuring scalability and reliability. By leveraging advanced tools and best practices, we ensure your cloud operations are both cost-effective and future-ready. Trust Code Craft Consulting to deliver measurable savings and enhanced cloud efficiency for your organization.",
-       aosDelay: "700",
-     },
-     {
-       name: "QA and Automationg",
-       icon: <MdDesignServices className="text-4xl text-primary" />,
-       link: "#",
-       description:
-       "A QA and Automation specialist focuses on ensuring software quality through meticulous testing and automated processes. They design and implement testing strategies to identify and resolve issues, ensuring optimal performance, security, and functionality. By leveraging advanced tools and methodologies, they streamline workflows, integrate with CI/CD pipelines, and maintain compliance with industry standards. From planning to execution, QA and Automation experts enhance reliability and efficiency, delivering seamless and dependable digital solutions tailored to specific business needs."
-       ,  aosDelay: "500",
-     },
-   
-   ];
+  const [count, setcount] = useState(false);
+  const skillsData = [
+    {
+      name: "App Development",
+      icon: <MdDeveloperMode className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Code Craft Consulting specializes in web development services, focusing on designing, building, and maintaining high-performance, scalable, and secure websites and web applications. We work closely with clients to understand their unique business needs, functionality, and performance. From custom website design to full-stack development, we leverage the latest technologies and frameworks to create dynamic, responsive, and user-friendly websites. Our team ensures that every project aligns with business goals, is optimized for speed, and provides a seamless experience across all devices."
+      , aosDelay: "0",
+    },
+    {
+      name: "Web Designing",
+      icon: <MdWeb className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Code Craft Consulting offers comprehensive web development services to build dynamic, secure, and scalable websites tailored to meet unique business needs. Combining cutting-edge technologies and industry best practices, our team specializes in creating responsive, user-friendly, and high-performance websites. From front-end development with sleek, intuitive interfaces to robust back-end solutions, we ensure seamless functionality and integration. Our expertise includes custom web applications, all designed to align with your brand identity, optimize user experience, and drive growth."
+      , aosDelay: "300",
+    },
+    {
+      name: "Cloud Cost Reduction",
+      icon: <MdCloudQueue className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "At Code Craft Consulting, we specialize in helping businesses optimize their cloud infrastructure to reduce costs without compromising performance. Our team of experts analyzes your current cloud usage, identifies inefficiencies, and implements strategies to minimize expenses while ensuring scalability and reliability. By leveraging advanced tools and best practices, we ensure your cloud operations are both cost-effective and future-ready. Trust Code Craft Consulting to deliver measurable savings and enhanced cloud efficiency for your organization.",
+      aosDelay: "700",
+    },
+    {
+      name: "QA and Automationg",
+      icon: <MdDesignServices className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "A QA and Automation specialist focuses on ensuring software quality through meticulous testing and automated processes. They design and implement testing strategies to identify and resolve issues, ensuring optimal performance, security, and functionality. By leveraging advanced tools and methodologies, they streamline workflows, integrate with CI/CD pipelines, and maintain compliance with industry standards. From planning to execution, QA and Automation experts enhance reliability and efficiency, delivering seamless and dependable digital solutions tailored to specific business needs."
+      , aosDelay: "500",
+    },
+
+  ];
   return (
     <div>
-    <div className="">
-      <div className="container min-h-[620px] flex mt-10 sm:mt-0">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
-          {/* Image section */}
-          <div data-aos="zoom-in" className="order-1 sm:order-2 relative">
-            <img
-              src={yellowCar}
-              alt=""
-              className="w-full sm:max-w-[280px] md:max-w-[430px]"
-            />
-            <div
-              data-aos="slide-right"
-              className="absolute -bottom-5 -right-8 px-4 py-2 rounded-xl bg-white dark:bg-gray-900 dark:text-white shadow-md"
-            >
-              <p className="text-gray-500 text-sm ">⭐Projects</p>
-              <h1 className="font-bold">
-                600+ <span className="font-normal">Done</span>
-              </h1>
+      <div className="">
+        <div className="container min-h-[620px] flex mt-10 sm:mt-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
+            {/* Image section */}
+            <div data-aos="zoom-in" className="order-1 sm:order-2 relative">
+              <img
+                src={yellowCar}
+                alt=""
+                className="w-full sm:max-w-[280px] md:max-w-[430px]"
+              />
+              <div
+                data-aos="slide-right"
+                className="absolute -bottom-5 -right-8 px-4 py-2 rounded-xl bg-white dark:bg-gray-900 dark:text-white shadow-md"
+              >
+                <p className="text-gray-500 text-sm ">⭐Projects</p>
+                <h1 className="font-bold">
+                  600+ <span className="font-normal">Done</span>
+                </h1>
+              </div>
             </div>
-          </div>
 
-          {/* Text section */}
-          <div className="space-y-5 order-2 sm:order-1 xl:pr-40 ">
-            <h1
-              data-aos="fade-up"
-              className="text-4xl sm:text-5xl font-semibold"
-              style={{ lineHeight: 1.2 }}
-            >
-              Building Brands at{" "}
-              <span className="text-primary">Code Craft Consulting</span>
-            </h1>
-            <p data-aos="fade-up" data-aos-delay="300">
-            Your trusted partner in creating custom applications and websites that combine innovation, functionality, and design excellence.
-Revolutionize your brand with software solutions and web services designed to maximize efficiency and amplify impact.
-            </p>
-            {/* <button
+            {/* Text section */}
+            <div className="space-y-5 order-2 sm:order-1 xl:pr-40 ">
+              <h1
+                data-aos="fade-up"
+                className="text-4xl sm:text-5xl font-semibold"
+                style={{ lineHeight: 1.2 }}
+              >
+                Building Brands at{" "}
+                <span className="text-primary">Code Craft Consulting</span>
+              </h1>
+              <p data-aos="fade-up" data-aos-delay="300">
+                Your trusted partner in creating custom applications and websites that combine innovation, functionality, and design excellence.
+                Revolutionize your brand with software solutions and web services designed to maximize efficiency and amplify impact.
+              </p>
+              {/* <button
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-offset="0"
@@ -93,64 +93,64 @@ Revolutionize your brand with software solutions and web services designed to ma
             >
               Learn More
             </button> */}
-          </div>
-        </div>
-      </div>
-      <ScrollTrigger
-        onEnter={() => setcount(true)}
-        onExit={() => setcount(false)}
-      >
-        <h1 className="text-center headingcounter-text">Achievement</h1>
-        <section className="section counter">
-        
-          <div className="counter-container  py-12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="counter-item text-center mb-5 sm:mb-0">
-                <h3 className="mb-0">
-                  <span className="counter-text">
-                    {count && (
-                      <CountUp start={0} end={100} duration={2} delay={0} />
-                    )}
-                  </span>{" "}
-                  +
-                </h3>
-                <p className="text-gray-500">Projects Ordered</p>
-              </div>
-              <div className="counter-item text-center mb-5 sm:mb-0">
-                <h3 className="mb-0">
-                  <span className="counter-text">
-                    {count && (
-                      <CountUp start={0} end={90} duration={2} delay={0} />
-                    )}{" "}
-                  </span>
-                  +{" "}
-                </h3>
-                <p className="text-gray-500">Project Completed</p>
-              </div>
-              <div className="counter-item text-center mb-5 sm:mb-0">
-                <h3 className="mb-0">
-                  <span className="counter-text">
-                    {count && (
-                      <CountUp start={0} end={5} duration={2} delay={0} />
-                    )}
-                  </span>
-                </h3>
-                <p className="text-gray-500">Available Country</p>
-              </div>
-              <div className="counter-item text-center">
-                <h3 className="mb-0">
-                  <span className="counter-text">
-                    {count && (
-                      <CountUp start={0} end={2} duration={2} delay={0} />
-                    )}
-                  </span>
-                </h3>
-                <p className="text-gray-500">Award Winner</p>
-              </div>
             </div>
           </div>
-        </section>
-      </ScrollTrigger>
+        </div>
+        <ScrollTrigger
+          onEnter={() => setcount(true)}
+          onExit={() => setcount(false)}
+        >
+          <h1 className="text-center headingcounter-text">Achievement</h1>
+          <section className="section counter">
+
+            <div className="counter-container  py-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="counter-item text-center mb-5 sm:mb-0">
+                  <h3 className="mb-0">
+                    <span className="counter-text">
+                      {count && (
+                        <CountUp start={0} end={100} duration={2} delay={0} />
+                      )}
+                    </span>{" "}
+                    +
+                  </h3>
+                  <p className="text-gray-500">Projects Ordered</p>
+                </div>
+                <div className="counter-item text-center mb-5 sm:mb-0">
+                  <h3 className="mb-0">
+                    <span className="counter-text">
+                      {count && (
+                        <CountUp start={0} end={90} duration={2} delay={0} />
+                      )}{" "}
+                    </span>
+                    +{" "}
+                  </h3>
+                  <p className="text-gray-500">Project Completed</p>
+                </div>
+                <div className="counter-item text-center mb-5 sm:mb-0">
+                  <h3 className="mb-0">
+                    <span className="counter-text">
+                      {count && (
+                        <CountUp start={0} end={5} duration={2} delay={0} />
+                      )}
+                    </span>
+                  </h3>
+                  <p className="text-gray-500">Available Country</p>
+                </div>
+                <div className="counter-item text-center">
+                  <h3 className="mb-0">
+                    <span className="counter-text">
+                      {count && (
+                        <CountUp start={0} end={2} duration={2} delay={0} />
+                      )}
+                    </span>
+                  </h3>
+                  <p className="text-gray-500">Award Winner</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </ScrollTrigger>
       </div>
       <div className="bg-gray-100  py-12 sm:grid sm:place-items-center">
         <div className="container">
@@ -197,37 +197,37 @@ Revolutionize your brand with software solutions and web services designed to ma
             className="text-center mt-4 sm:mt-8"
           >
             {/* <button className="primary-btn">Learn More</button> */}
-          
-              <BrandsLogo />
 
-                    
-      <div className="outer-box">
-        
-      <div className="inner-box1">
-      <section className="careers-section">
-      <div className="content-container">
-        <h1 className="heading">Code craft Consulting</h1>
-        <h2 className="subheading">Go Beyond the Expected</h2>
-        <p className="description">
-          We're dedicated to helping our clients do amazing things and unlocking the potential of those who advance the world. Join us, and you can too.
-        </p>
-        <Link to="/contact-us" className="apply-button">Contact us</Link>
-        {/* <div className="links">
+            <BrandsLogo />
+
+
+            <div className="outer-box">
+
+              <div className="inner-box1">
+                <section className="careers-section">
+                  <div className="content-container">
+                    <h1 className="heading">Code craft Consulting</h1>
+                    <h2 className="subheading">Go Beyond the Expected</h2>
+                    <p className="description">
+                      We're dedicated to helping our clients do amazing things and unlocking the potential of those who advance the world. Join us, and you can too.
+                    </p>
+                    <Link to="/contact-us" className="apply-button">Contact us</Link>
+                    {/* <div className="links">
           <p href="#bring-your-best" className="link">BRING YOUR BEST SELF TO WORK</a>
           <a href="#explore-careers" className="link">EXPLORE THE CAREERS BLOG</a>
         </div> */}
-      </div>
-    </section>
+                  </div>
+                </section>
 
-      </div>
-     
-      <div className="inner-box2">
-       <div className="inner-babybox2 ">
-        <img src={serviceImg} alt="" />
-       </div>
-       </div>
-    </div>
               </div>
+
+              <div className="inner-box2">
+                <div className="inner-babybox2 ">
+                  <img src={serviceImg} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

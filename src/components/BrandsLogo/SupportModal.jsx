@@ -106,7 +106,7 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
             width: '350px',
             height: '80vh',
             border: '1px solid #ccc',
-            zIndex: 1000,
+            zIndex: 1000 ,
             borderRadius: '10px',
             display: 'flex',
             flexDirection: 'column',
@@ -193,7 +193,6 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
             selectedService: optionId
         };
 
-        // If this is a leaf node with satisfaction option
         if (conversationFlow[optionId].satisfaction) {
             updatedState.stage = 'satisfaction';
         }

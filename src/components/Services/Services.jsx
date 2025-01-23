@@ -1,7 +1,4 @@
 import React from "react";
-import { FaCameraRetro } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
-import { SlNote } from "react-icons/sl";
 import serviceImg from '../../assets/website/download (1).jpg'
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 import { Link } from "react-router-dom";

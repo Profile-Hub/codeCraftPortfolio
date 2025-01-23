@@ -16,7 +16,7 @@ const ScrollToSupport = () => {
     <div className='support-modal'>
          {showModal && <SupportModal showModal={showModal} handleCloseModal={handleCloseModal} />}
     <div className="support-icon-container">
-      <p className='support-p'>How can I help you!</p>
+      <p className='support-p'>How can I help you !</p>
       <div className="support-icon blink" style={{ fontSize: '2rem' }} onClick={handleSupport}>
         <span className="material-symbols-outlined icon-support">
           support_agent
