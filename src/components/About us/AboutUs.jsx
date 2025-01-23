@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 import Slider from 'react-slick';
 import profile from '../../assets/website/shubham2crop.png';
 import profilerishu from '../../assets/website/rishu.jpg';
-import sidepic from '../../assets/website/fullfig.jpg';
+import sidepic from '../../assets/website/mub.jpeg';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import LazyLoad from 'react-lazyload';
@@ -108,6 +108,7 @@ const Aboutus = () => {
               <div className="flex justify-center items-center">
                 <LazyLoad placeholder={<Skeleton width={240} height={240} />}>
                   <img
+                    style={{borderRadius:"10px"}}
                     loading="lazy"
                     src={sidepic}
                     alt="About Us"
@@ -159,7 +160,7 @@ const Aboutus = () => {
         onEnter={() => setcount(true)}
         onExit={() => setcount(false)}
       >
-        <h1 className="text-center headingcounter-text">Achievement</h1>
+        <h1 className="text-center headingcounter-text">Milestones</h1>
         <section className="section counter">
         
           <div className="counter-container  py-12">
@@ -173,7 +174,7 @@ const Aboutus = () => {
                   </span>{" "}
                   +
                 </h3>
-                <p className="text-gray-500">Projects Ordered</p>
+                <p className="text-gray-500">Projects undertaken</p>
               </div>
               <div className="counter-item text-center mb-5 sm:mb-0">
                 <h3 className="mb-0">
@@ -184,13 +185,13 @@ const Aboutus = () => {
                   </span>
                   +{" "}
                 </h3>
-                <p className="text-gray-500">Project Completed</p>
+                <p className="text-gray-500">Delivered</p>
               </div>
               <div className="counter-item text-center mb-5 sm:mb-0">
                 <h3 className="mb-0">
                   <span className="counter-text">
                     {count && (
-                      <CountUp start={0} end={5} duration={2} delay={0} />
+                      <CountUp start={0} end={20} duration={2} delay={0} />
                     )}
                   </span>
                 </h3>
@@ -200,11 +201,11 @@ const Aboutus = () => {
                 <h3 className="mb-0">
                   <span className="counter-text">
                     {count && (
-                      <CountUp start={0} end={2} duration={2} delay={0} />
+                      <CountUp start={0} end={10} duration={2} delay={0} />
                     )}
                   </span>
                 </h3>
-                <p className="text-gray-500">Award Winner</p>
+                <p className="text-gray-500">Awards</p>
               </div>
             </div>
           </div>

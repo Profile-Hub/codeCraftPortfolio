@@ -28,8 +28,8 @@ const Contactus = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Validate phone number to accept only natural numbers and limit to 10 characters
-    if (name === 'phoneNumber' && (!/^\d+$/.test(value) || value.length > 10)) {
+    // Validate phone number to accept only natural numbers 
+    if (name === 'phoneNumber' && (!/^\d+$/.test(value))) {
       return;
     }
 
@@ -54,7 +54,7 @@ const Contactus = () => {
     setIsSubmitting(true);
   
     const serviceId = 'service_x3y9pmc';
-    const templateId = 'template_g9u7tp9';
+    const templateId = 'template_z8jkb6n';
     const userId = 'YBPHtMkiDsFRGpeN4';
   
     const templateParams = {
@@ -63,7 +63,8 @@ const Contactus = () => {
       phone: formData.phoneNumber,
       company: formData.company,
       message: formData.message,
-      to_email: 'support@codecraftconsulting.in, sanjit@codecraftconsulting.in', 
+      to_email: 'support@codecraftconsulting.in',
+      cc_email: 'sanjit@codecraftconsulting.in',
     };
   
     emailjs
@@ -97,7 +98,7 @@ const Contactus = () => {
         <div style={{ boxShadow: '14px 14px 14px 14px rgba(0, 0, 0, 0.279)', padding: '1rem' }}>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight pt-4 text-gray-900 sm:text-4xl">
-              Contact With Code Craft
+              Contact Us
             </h2>
           </div>
           <form className="mx-auto mt-10 max-w-xl sm:mt-10" onSubmit={handleSubmit}>
