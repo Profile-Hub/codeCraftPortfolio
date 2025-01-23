@@ -4,11 +4,13 @@ import CountUp from 'react-countup';
 import Slider from 'react-slick';
 import profile from '../../assets/website/shubham2crop.png';
 import profilerishu from '../../assets/website/rishu.jpg';
-import sidepic from '../../assets/website/fullfig.jpg';
+import sidepic from '../../assets/website/mub.jpeg';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import LazyLoad from 'react-lazyload';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "./AboutUs.css";
+import ScrollToSupport from '../BrandsLogo/scrollToTop';
 import { FaBullseye, FaEye, FaCogs } from 'react-icons/fa';
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 
@@ -40,8 +42,7 @@ const skillsData = [
 ];
 
 const Aboutus = () => {
-  const [counter, setCounter] = useState(false);
-  const [count, setCount] = useState(false);
+  const [count, setcount] = useState(false);
 
   const settings_client = {
     dots: false,
@@ -94,7 +95,7 @@ const Aboutus = () => {
                   in an ever-evolving digital landscape.
                 </p>
                 <a
-                  href="https://youtube.com/playlist?list=PLPXLxMmLRj-Ia_sqcsx6DGK__88I0SIUc&si=K1el360woew-sYAJ"
+                  href="https://www.linkedin.com/showcase/code-craftconsulting/about/?viewAsMember=true"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-main btn-round-full"
@@ -107,6 +108,7 @@ const Aboutus = () => {
               <div className="flex justify-center items-center">
                 <LazyLoad placeholder={<Skeleton width={240} height={240} />}>
                   <img
+                    style={{borderRadius:"10px"}}
                     loading="lazy"
                     src={sidepic}
                     alt="About Us"
@@ -145,20 +147,20 @@ const Aboutus = () => {
             </p>
 
             <h2 className="mt-2 mb-1 position-relative content-title text-gray name-font content-title">Sanjit Singh</h2>
-            <p className='text-gray founder-font founder-font'>Founder</p>
-          </div>
+            <p className='text-gray founder-font founder-font '><strong>CEO</strong></p>
+            <a href="https://www.linkedin.com/in/sanjit-s-a033a564/" target="_blank" className="pointer text-gray-700"><LinkedInIcon/>Linkedin</a>
 
+          </div>
         </div>
       </div>
 
       {/* Section B part End */}
 
-      {/* Section C part start */}
       <ScrollTrigger
         onEnter={() => setcount(true)}
         onExit={() => setcount(false)}
       >
-        <h1 className="text-center headingcounter-text">Achivement</h1>
+        <h1 className="text-center headingcounter-text">Milestones</h1>
         <section className="section counter">
         
           <div className="counter-container  py-12">
@@ -172,7 +174,7 @@ const Aboutus = () => {
                   </span>{" "}
                   +
                 </h3>
-                <p className="text-gray-500">Project Order</p>
+                <p className="text-gray-500">Projects undertaken</p>
               </div>
               <div className="counter-item text-center mb-5 sm:mb-0">
                 <h3 className="mb-0">
@@ -183,13 +185,13 @@ const Aboutus = () => {
                   </span>
                   +{" "}
                 </h3>
-                <p className="text-gray-500">Project Completed</p>
+                <p className="text-gray-500">Delivered</p>
               </div>
               <div className="counter-item text-center mb-5 sm:mb-0">
                 <h3 className="mb-0">
                   <span className="counter-text">
                     {count && (
-                      <CountUp start={0} end={5} duration={2} delay={0} />
+                      <CountUp start={0} end={20} duration={2} delay={0} />
                     )}
                   </span>
                 </h3>
@@ -199,11 +201,11 @@ const Aboutus = () => {
                 <h3 className="mb-0">
                   <span className="counter-text">
                     {count && (
-                      <CountUp start={0} end={2} duration={2} delay={0} />
+                      <CountUp start={0} end={10} duration={2} delay={0} />
                     )}
                   </span>
                 </h3>
-                <p className="text-gray-500">Award Winner</p>
+                <p className="text-gray-500">Awards</p>
               </div>
             </div>
           </div>
@@ -277,8 +279,8 @@ const Aboutus = () => {
           <div className="row justify-content-center">
             <div className="col-lg-7 text-center">
               <div className="section-title">
-                <span className="h3 text-color content-title">Our Founded Engineer</span>
-                <h1 className="mt-3 content-title">Expert Team profileber to get best service</h1>
+                <span className="h3 text-color content-title">Our Founding Engineers</span>
+                {/* <h1 className="mt-3 content-title">Expert Team profileber to get best service</h1> */}
               </div>
               <div className="founded">
                 <div className="card" style={{ width: "18rem" }}>
@@ -289,6 +291,9 @@ const Aboutus = () => {
                   />
                   <div className="card-body">
                     <h3 className="card-title content-title">Shubham Kumar Garg</h3>
+                    <p>Full-Stack Engineer</p>
+            <a href="https://www.linkedin.com/in/shubham-kumar-garg-b5a9bb234/" target="_blank" className="pointer text-gray-700"><LinkedInIcon/>Linkedin</a>
+
                   </div>
                 </div>
                 <div className="card" style={{ width: "22rem" }}>
@@ -299,7 +304,8 @@ const Aboutus = () => {
                   />
                   <div className="card-body">
                     <h3 className="card-title content-title">Rishu Mehta</h3>
-                    
+                    <p>Full-Stack Engineer</p>
+            <a href="https://www.linkedin.com/in/rishu-mehta05/" target="_blank" className="pointer text-gray-700"><LinkedInIcon/>Linkedin</a>
                   </div>
                 </div>
               </div>
@@ -381,7 +387,7 @@ const Aboutus = () => {
 </div>
       </div>
 
-
+      <ScrollToSupport/>
       {/* Section E part End */}
 
 

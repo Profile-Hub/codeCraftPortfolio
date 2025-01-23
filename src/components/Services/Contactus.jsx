@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Switch } from '@headlessui/react';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
-
+import ScrollToSupport from '../BrandsLogo/scrollToTop';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -15,7 +15,6 @@ const Contactus = () => {
     lastName: '',
     email: '',
     phoneNumber: '',
-    company: '',
     message: '',
     country: 'India',
   });
@@ -52,22 +51,21 @@ const Contactus = () => {
       return;
     }
     setIsSubmitting(true);
-
-    const serviceId = 'service_x3y9pmc';
-    const templateId = 'template_g9u7tp9';
-    const userId = 'YBPHtMkiDsFRGpeN4';
-
+  
+    const serviceId = 'service_v3yq3ai';
+    const templateId = 'template_w5g53zn';
+    const publicKey = 'XH2-az7ls-9LE6sc_';
+  
     const templateParams = {
       from_name: `${formData.firstName} ${formData.lastName}`,
       email: formData.email,
       phone: formData.phoneNumber,
-      company: formData.company,
       message: formData.message,
-      to_email: 'shubhamkumargarg63@gmail.com', // Admin email
+      to_email: 'support@codecraftconsulting.in, sanjit@codecraftconsulting.in', 
     };
-
+  
     emailjs
-      .send(serviceId, templateId, templateParams, userId)
+      .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
         alert('Thank you for contacting us! Your message has been sent.');
@@ -77,7 +75,6 @@ const Contactus = () => {
           lastName: '',
           email: '',
           phoneNumber: '',
-          company: '',
           message: '',
           country: 'India',
         });
@@ -89,6 +86,7 @@ const Contactus = () => {
         setIsSubmitting(false);
       });
   };
+  
 
   return (
     <div>
@@ -204,7 +202,7 @@ const Contactus = () => {
                 </Switch>
                 <Switch.Label className="text-sm text-gray-600">
                   By selecting this, you agree to our{' '}
-                  <Link to="" className="font-semibold text-indigo-600">
+                  <Link to="/Privacy-Policy" className="font-semibold text-indigo-600">
                     privacy policy
                   </Link>
                   .
@@ -226,6 +224,7 @@ const Contactus = () => {
           </form>
         </div>
       </div>
+      <ScrollToSupport/>
     </div>
   );
 };

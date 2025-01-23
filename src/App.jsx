@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './app.css'
+
 // Component importimport AOS from "aos";
 import { BrowserRouter as Router, Route, Routes , useLocation} from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
@@ -11,8 +12,9 @@ import Homepage from './components/Hero/Homepage';
 import Footer from "./components/Footer/Footer";
 import Services from "./components/Services/Services";
 import Contactus from "./components/Services/Contactus.jsx";
-
+import Termcondition from "./components/TermCondition/Termcondition.jsx";
 import Aboutus from "./components/About us/AboutUs.jsx";
+import PrivacyPolicy from "./components/TermCondition/PrivacyPolicy.jsx";
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -33,6 +35,8 @@ const App = () => {
         <Route path="/About-us" element={<Aboutus />} />
         <Route path="/contact-us" element={<Contactus />} />
         <Route path="/Services" element={<Services />} />
+        <Route path="/term-Condition" element={<Termcondition />} />
+        <Route path="/Privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
 
         <Footer />

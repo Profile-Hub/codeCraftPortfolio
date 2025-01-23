@@ -1,0 +1,67 @@
+.support-modal{
+  width: 50%;
+  height: 100%;
+}
+.support-icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+  }
+  .support-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .icon-support{
+    font-size: 2.7rem;
+    background-color: rgb(132, 255, 0);
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .icon-support:hover {
+    background-color: rgb(0, 221, 241);
+  }
+  .support-p{
+    background-color: rgb(224, 239, 255);
+    color: #000;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  .support-emoji {
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .support-icon:hover .support-emoji {
+    transform: scale(1.2);
+  }
+  
+  .support-text {
+    position: absolute;
+    bottom: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* .support-icon:hover .support-text {
+    opacity: 1;
+  } */
+  
+  /* Blink animation */
+  /* @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .blink {
+    animation: blink 1.5s infinite;
+  } */

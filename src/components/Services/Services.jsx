@@ -1,7 +1,4 @@
 import React from "react";
-import { FaCameraRetro } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
-import { SlNote } from "react-icons/sl";
 import serviceImg from '../../assets/website/download (1).jpg'
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 import { Link } from "react-router-dom";
@@ -17,44 +14,70 @@ import slideimg4 from "../../assets/brands/profile.png";
 import slideimg5 from "../../assets/brands/doner.png";
 import slideimg6 from "../../assets/brands/details.png";
 import slideimg7 from "../../assets/brands/filter.png";
+import ScrollToSupport from "../BrandsLogo/scrollToTop";
 
 
-
+import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther } from "react-icons/md";
 const skillsData = [
-  {
-    name: "App Development",
-    icon: <FaCameraRetro className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "An app developer specializes in designing, creating, and maintaining mobile and web applications. With a focus on user experience, functionality, and performance, they transform ideas into intuitive, scalable, and secure digital solutions. From concept to deployment, app developers leverage cutting-edge technologies and frameworks to deliver customized apps that meet unique business or individual needs.",
-    aosDelay: "0",
-  },
-  {
-    name: "Web Designing",
-    icon: <GiNotebook className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "Web designing is the art and science of creating visually appealing, user-friendly, and responsive websites. It combines elements of graphic design, layout, and coding to craft digital experiences that are both functional and engaging. A web designer focuses on aesthetics, navigation, and compatibility to ensure websites are accessible across devices, optimized for performance, and aligned with the brand’s identity and goals.",
-    aosDelay: "300",
-  },
-  {
-    name: "IOS Based Software Devlropment",
-    icon: <SlNote className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "At Code Craft Consulting, we specialize in cutting-edge iOS software development tailored to meet the unique needs of businesses in a rapidly evolving digital landscape. Our team of expert developers leverages the latest tools, technologies, and frameworks in the Apple ecosystem, Trust Code Craft Consulting to transform your vision into a polished, user-centric app designed to thrive on iPhones, iPads, and the entire Apple platform.",
-    aosDelay: "700",
-  },
-  {
-    name: "Graphic Designing",
-    icon: <SlNote className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "Graphic designing is the creative process of visual communication using typography, imagery, colors, and layouts to convey messages effectively. It involves crafting designs for various mediums, including print, digital, and branding materials, to captivate audiences and enhance brand identity. A graphic designer combines artistic skills and technical expertise to create logos, advertisements, social media visuals, and more, transforming ideas into impactful visual content.",
-    aosDelay: "500",
-  },
-
-];
+     {
+       name: "App Development",
+       icon: <MdDeveloperMode className="text-4xl text-primary" />, 
+       link: "#",
+       description:
+       "Code Craft Consulting specializes in web development services, focusing on designing, building, and maintaining high-performance, scalable, and secure websites and web applications. We work closely with clients to understand their unique business needs, functionality, and performance. From custom website design to full-stack development, we leverage the latest technologies and frameworks to create dynamic, responsive, and user-friendly websites. Our team ensures that every project aligns with business goals, is optimized for speed, and provides a seamless experience across all devices."
+        ,aosDelay: "0",
+     },
+     {
+       name: "Web Development",
+       icon: <MdWeb className="text-4xl text-primary" />, 
+       link: "#",
+       description:
+       "Code Craft Consulting offers comprehensive web development services to build dynamic, secure, and scalable websites tailored to meet unique business needs. Combining cutting-edge technologies and industry best practices, our team specializes in creating responsive, user-friendly, and high-performance websites. From front-end development with sleek, intuitive interfaces to robust back-end solutions, we ensure seamless functionality and integration. Our expertise includes custom web applications, all designed to align with your brand identity, optimize user experience, and drive growth."
+        ,aosDelay: "300",
+     },
+     {
+       name: "Cloud Cost Reduction",
+       icon: <MdCloudQueue className="text-4xl text-primary" />, 
+       link: "#",
+       description:
+         "At Code Craft Consulting, we specialize in helping businesses optimize their cloud infrastructure to reduce costs without compromising performance. Our team of experts analyzes your current cloud usage, identifies inefficiencies, and implements strategies to minimize expenses while ensuring scalability and reliability. By leveraging advanced tools and best practices, we ensure your cloud operations are both cost-effective and future-ready. Trust Code Craft Consulting to deliver measurable savings and enhanced cloud efficiency for your organization.",
+       aosDelay: "700",
+     },
+     {
+       name: "QA and Automation",
+       icon: <MdDesignServices className="text-4xl text-primary" />,
+       link: "#",
+       description:
+       "A QA and Automation specialist focuses on ensuring software quality through meticulous testing and automated processes. They design and implement testing strategies to identify and resolve issues, ensuring optimal performance, security, and functionality. By leveraging advanced tools and methodologies, they streamline workflows, integrate with CI/CD pipelines, and maintain compliance with industry standards. From planning to execution, QA and Automation experts enhance reliability and efficiency, delivering seamless and dependable digital solutions tailored to specific business needs."
+       ,  aosDelay: "500",
+     },
+     {
+      name: "AI Integration",
+      icon: <MdOutlineSmartToy className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Code Craft Consulting empowers businesses with AI integration services, enabling smarter automation, decision-making, and personalized experiences. Our team specializes in developing and deploying machine learning models, natural language processing systems, and computer vision solutions. By seamlessly embedding AI into your workflows and applications, we help you drive innovation, improve efficiency, and unlock the potential of intelligent technologies for your organization.",
+      aosDelay: "900",
+    },
+    {
+      name: "Data Science & Data Engineering",
+      icon: <MdOutlineDataUsage className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "At Code Craft Consulting, we help organizations leverage data as a strategic asset through our Data Science and Data Engineering services. From designing scalable data pipelines to building predictive analytics models, we deliver end-to-end solutions tailored to your business needs. Our expertise in big data platforms, cloud services, and machine learning enables us to transform raw data into actionable insights, fueling data-driven decision-making and sustainable growth for your organization.",
+      aosDelay: "1100",
+    },
+    {
+      name: "IoT Development",
+      icon: <MdDevicesOther className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Code Craft Consulting offers cutting-edge IoT Development services to help businesses connect and automate devices for smarter operations. From prototyping IoT-enabled hardware to building secure and scalable IoT platforms, we specialize in designing solutions that integrate seamlessly with your existing systems. Our expertise in IoT protocols, cloud integration, and real-time analytics ensures optimized performance and enhanced productivity, enabling you to unlock the full potential of IoT technology for your business.",
+      aosDelay: "1300",
+    },
+    
+   
+   ];
 const Services = () => {
   const settings_client = {
     dots: false,
@@ -74,7 +97,7 @@ const Services = () => {
   };
   return (
     <>
-      <section className=" bg-1">
+      {/* <section className=" bg-1">
         <div className='carrier-top-cover' >
           <div className="container ">
             <div className="row">
@@ -169,7 +192,7 @@ const Services = () => {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
       <span id="about"></span>
       <div className="bg-gray-100  py-12 sm:grid sm:place-items-center">
         <div className="container">
@@ -215,7 +238,20 @@ const Services = () => {
             data-aos-offset="0"
             className="text-center mt-4 sm:mt-8"
           >
-            <button className="primary-btn">Learn More</button>
+            <a 
+            href="https://www.linkedin.com/company/code-craft-consulting/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-offset="0"
+              className="primary-btn"
+            >
+              Learn More
+            </button>
+          </a>
 
             <BrandsLogo />
 
@@ -232,15 +268,15 @@ const Services = () => {
                     </p>
                            <Link to="/contact-us" className="apply-button">Contact us</Link>
                    
-                    <div className="links">
+                    {/* <div className="links">
                       <a href="#bring-your-best" className="link">BRING YOUR BEST SELF TO WORK</a>
                       <a href="#explore-careers" className="link">EXPLORE THE CAREERS BLOG</a>
-                    </div>
+                    </div> */}
                   </div>
                 </section>
 
               </div>
-
+ 
               <div className="inner-box2">
                 <div className="inner-babybox2 ">
                   <img src={serviceImg} alt="" />
@@ -249,6 +285,7 @@ const Services = () => {
             </div>
           </div>
         </div>
+        <ScrollToSupport/>
       </div>
     </>
   );
