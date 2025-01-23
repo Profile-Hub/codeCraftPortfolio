@@ -1,6 +1,7 @@
 import React from 'react'
 import "./term.css"
 import img from "../../assets/website/contacts1.png"
+import ScrollToSupport from '../BrandsLogo/scrollToTop'
 const PrivacyPolicy = () => {
   return (
     <div>
@@ -197,6 +198,7 @@ const PrivacyPolicy = () => {
         </div>
     </div>
     </div>
+    <ScrollToSupport/>
 </div>
   )
 }

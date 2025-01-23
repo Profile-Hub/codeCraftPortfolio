@@ -17,7 +17,7 @@ import slideimg4 from "../../assets/brands/profile.png";
 import slideimg5 from "../../assets/brands/doner.png";
 import slideimg6 from "../../assets/brands/details.png";
 import slideimg7 from "../../assets/brands/filter.png";
-
+import ScrollToSupport from "../BrandsLogo/scrollToTop";
 
 
 import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther } from "react-icons/md";
@@ -288,6 +288,7 @@ const Services = () => {
             </div>
           </div>
         </div>
+        <ScrollToSupport/>
       </div>
     </>
   );

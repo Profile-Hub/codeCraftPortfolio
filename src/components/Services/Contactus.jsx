@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Switch } from '@headlessui/react';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
-
+import ScrollToSupport from '../BrandsLogo/scrollToTop';
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -15,7 +15,6 @@ const Contactus = () => {
     lastName: '',
     email: '',
     phoneNumber: '',
-    company: '',
     message: '',
     country: 'India',
   });
@@ -28,8 +27,8 @@ const Contactus = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Validate phone number to accept only natural numbers 
-    if (name === 'phoneNumber' && (!/^\d+$/.test(value))) {
+    // Validate phone number to accept only natural numbers and limit to 10 characters
+    if (name === 'phoneNumber' && (!/^\d+$/.test(value) || value.length > 10)) {
       return;
     }
 
@@ -53,22 +52,20 @@ const Contactus = () => {
     }
     setIsSubmitting(true);
   
-    const serviceId = 'service_x3y9pmc';
-    const templateId = 'template_z8jkb6n';
-    const userId = 'YBPHtMkiDsFRGpeN4';
+    const serviceId = 'service_v3yq3ai';
+    const templateId = 'template_w5g53zn';
+    const publicKey = 'XH2-az7ls-9LE6sc_';
   
     const templateParams = {
       from_name: `${formData.firstName} ${formData.lastName}`,
       email: formData.email,
       phone: formData.phoneNumber,
-      company: formData.company,
       message: formData.message,
-      to_email: 'support@codecraftconsulting.in',
-      cc_email: 'sanjit@codecraftconsulting.in',
+      to_email: 'support@codecraftconsulting.in, sanjit@codecraftconsulting.in', 
     };
   
     emailjs
-      .send(serviceId, templateId, templateParams, userId)
+      .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
         alert('Thank you for contacting us! Your message has been sent.');
@@ -78,7 +75,6 @@ const Contactus = () => {
           lastName: '',
           email: '',
           phoneNumber: '',
-          company: '',
           message: '',
           country: 'India',
         });
@@ -98,7 +94,7 @@ const Contactus = () => {
         <div style={{ boxShadow: '14px 14px 14px 14px rgba(0, 0, 0, 0.279)', padding: '1rem' }}>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight pt-4 text-gray-900 sm:text-4xl">
-              Contact Us
+              Contact With Code Craft
             </h2>
           </div>
           <form className="mx-auto mt-10 max-w-xl sm:mt-10" onSubmit={handleSubmit}>
@@ -228,6 +224,7 @@ const Contactus = () => {
           </form>
         </div>
       </div>
+      <ScrollToSupport/>
     </div>
   );
 };

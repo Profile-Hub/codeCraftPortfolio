@@ -9,10 +9,10 @@ import { SlNote } from "react-icons/sl";
 import serviceImg from '../../assets/website/download (1).jpg'
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 import { Link } from "react-router-dom";
-import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther } from "react-icons/md";
+import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices } from "react-icons/md";
+import SupportModal from "../BrandsLogo/SupportModal";
 const Hero = () => {
    const [count, setcount] = useState(false);
-  
    const skillsData = [
      {
        name: "App Development",
@@ -23,7 +23,7 @@ const Hero = () => {
         ,aosDelay: "0",
      },
      {
-       name: "Web Development",
+       name: "Web Designing",
        icon: <MdWeb className="text-4xl text-primary" />, 
        link: "#",
        description:
@@ -39,38 +39,13 @@ const Hero = () => {
        aosDelay: "700",
      },
      {
-       name: "QA and Automation",
+       name: "QA and Automationg",
        icon: <MdDesignServices className="text-4xl text-primary" />,
        link: "#",
        description:
        "A QA and Automation specialist focuses on ensuring software quality through meticulous testing and automated processes. They design and implement testing strategies to identify and resolve issues, ensuring optimal performance, security, and functionality. By leveraging advanced tools and methodologies, they streamline workflows, integrate with CI/CD pipelines, and maintain compliance with industry standards. From planning to execution, QA and Automation experts enhance reliability and efficiency, delivering seamless and dependable digital solutions tailored to specific business needs."
        ,  aosDelay: "500",
      },
-     {
-      name: "AI Integration",
-      icon: <MdOutlineSmartToy className="text-4xl text-primary" />,
-      link: "#",
-      description:
-        "Code Craft Consulting empowers businesses with AI integration services, enabling smarter automation, decision-making, and personalized experiences. Our team specializes in developing and deploying machine learning models, natural language processing systems, and computer vision solutions. By seamlessly embedding AI into your workflows and applications, we help you drive innovation, improve efficiency, and unlock the potential of intelligent technologies for your organization.",
-      aosDelay: "900",
-    },
-    {
-      name: "Data Science & Data Engineering",
-      icon: <MdOutlineDataUsage className="text-4xl text-primary" />,
-      link: "#",
-      description:
-        "At Code Craft Consulting, we help organizations leverage data as a strategic asset through our Data Science and Data Engineering services. From designing scalable data pipelines to building predictive analytics models, we deliver end-to-end solutions tailored to your business needs. Our expertise in big data platforms, cloud services, and machine learning enables us to transform raw data into actionable insights, fueling data-driven decision-making and sustainable growth for your organization.",
-      aosDelay: "1100",
-    },
-    {
-      name: "IoT Development",
-      icon: <MdDevicesOther className="text-4xl text-primary" />,
-      link: "#",
-      description:
-        "Code Craft Consulting offers cutting-edge IoT Development services to help businesses connect and automate devices for smarter operations. From prototyping IoT-enabled hardware to building secure and scalable IoT platforms, we specialize in designing solutions that integrate seamlessly with your existing systems. Our expertise in IoT protocols, cloud integration, and real-time analytics ensures optimized performance and enhanced productivity, enabling you to unlock the full potential of IoT technology for your business.",
-      aosDelay: "1300",
-    },
-    
    
    ];
   return (
@@ -106,25 +81,18 @@ const Hero = () => {
               Building Brands at{" "}
               <span className="text-primary">Code Craft Consulting</span>
             </h1>
-            <p data-aos="fade-up" data-aos-delay="300" style={{ marginBottom: "1rem" }}>
+            <p data-aos="fade-up" data-aos-delay="300">
             Your trusted partner in creating custom applications and websites that combine innovation, functionality, and design excellence.
 Revolutionize your brand with software solutions and web services designed to maximize efficiency and amplify impact.
             </p>
-            <a 
-            href="https://www.linkedin.com/company/code-craft-consulting/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button
+            {/* <button
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-offset="0"
               className="primary-btn"
             >
               Learn More
-            </button>
-          </a>
-
+            </button> */}
           </div>
         </div>
       </div>
@@ -132,7 +100,7 @@ Revolutionize your brand with software solutions and web services designed to ma
         onEnter={() => setcount(true)}
         onExit={() => setcount(false)}
       >
-        <h1 className="text-center headingcounter-text">Milestones</h1>
+        <h1 className="text-center headingcounter-text">Achievement</h1>
         <section className="section counter">
         
           <div className="counter-container  py-12">
@@ -146,7 +114,7 @@ Revolutionize your brand with software solutions and web services designed to ma
                   </span>{" "}
                   +
                 </h3>
-                <p className="text-gray-500">Projects undertaken</p>
+                <p className="text-gray-500">Projects Ordered</p>
               </div>
               <div className="counter-item text-center mb-5 sm:mb-0">
                 <h3 className="mb-0">
@@ -157,13 +125,13 @@ Revolutionize your brand with software solutions and web services designed to ma
                   </span>
                   +{" "}
                 </h3>
-                <p className="text-gray-500">Delivered</p>
+                <p className="text-gray-500">Project Completed</p>
               </div>
               <div className="counter-item text-center mb-5 sm:mb-0">
                 <h3 className="mb-0">
                   <span className="counter-text">
                     {count && (
-                      <CountUp start={0} end={20} duration={2} delay={0} />
+                      <CountUp start={0} end={5} duration={2} delay={0} />
                     )}
                   </span>
                 </h3>
@@ -173,11 +141,11 @@ Revolutionize your brand with software solutions and web services designed to ma
                 <h3 className="mb-0">
                   <span className="counter-text">
                     {count && (
-                      <CountUp start={0} end={10} duration={2} delay={0} />
+                      <CountUp start={0} end={2} duration={2} delay={0} />
                     )}
                   </span>
                 </h3>
-                <p className="text-gray-500">Awards</p>
+                <p className="text-gray-500">Award Winner</p>
               </div>
             </div>
           </div>
@@ -228,20 +196,7 @@ Revolutionize your brand with software solutions and web services designed to ma
             data-aos-offset="0"
             className="text-center mt-4 sm:mt-8"
           >
-            <a 
-            href="https://www.linkedin.com/company/code-craft-consulting/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-offset="0"
-              className="primary-btn"
-            >
-              Learn More
-            </button>
-          </a>
+            {/* <button className="primary-btn">Learn More</button> */}
           
               <BrandsLogo />
 
