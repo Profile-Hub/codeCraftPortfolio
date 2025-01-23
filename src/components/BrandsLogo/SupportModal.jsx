@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
-import './SupportChat.css';
 import img from '../../assets/website/Vector.svg';
 
 
@@ -107,6 +106,7 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
             width: '350px',
             height: '80vh',
             border: '1px solid #ccc',
+            zIndex: 1000,
             borderRadius: '10px',
             display: 'flex',
             flexDirection: 'column',
@@ -383,7 +383,7 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
                         <p style={{margin: 0, fontSize: '12px', color: 'green'}}>Online</p>
                     </div>
                     <button 
-                        style={{marginLeft: 'auto', background: 'none', border: 'none', fontSize: '20px', cursor: 'pointer'}}
+                        style={{marginLeft: 'auto', background: 'none', border: 'none', fontSize: '32px', cursor: 'pointer'}}
                         onClick={handleCloseModal}
                     >
                         ×
