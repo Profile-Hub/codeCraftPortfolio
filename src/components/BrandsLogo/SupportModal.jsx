@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
 import img from '../../assets/website/Vector.svg';
+import { Link } from 'react-router-dom';
 
 
 const SupportModal = ({ showModal, handleCloseModal }) => {
@@ -27,8 +28,9 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
         initial: {
             message: 'How may I help you today?',
             options: [
-                { id: 'contact', text: 'Contact Details' },
-                { id: 'services', text: 'Our Services' }
+               
+                { id: 'services', text: 'Our Services' },
+                { id: 'contact', text: 'Contact Details' }
             ]
         },
         contact: {
@@ -44,7 +46,12 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
             options: [
                 { id: 'webDev', text: 'Web Development' },
                 { id: 'mobileDev', text: 'Mobile Development' },
-                { id: 'cloudInfra', text: 'Cloud Infrastructure' }
+                { id: 'cloudInfra', text: 'Cloud Infrastructure' },
+                { id: 'programManagement', text: 'Program Management' },
+                { id: 'securityVAPT', text: 'Security & VAPT' },
+                { id: 'uiUxDesign', text: 'UI/UX Design' },
+                { id: 'isoCertifications', text: 'ISO Certifications' },
+                { id: 'qaAutomation', text: 'QA & Automation' }
             ]
         },
         phone: {
@@ -80,6 +87,41 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
                 { id: 'optimization', text: 'Cost Optimization' }
             ]
         },
+        programManagement: {
+            message: 'Program Management Services:',
+            options: [
+                { id: 'planning', text: 'Project Planning and Execution' },
+                { id: 'delivery', text: 'Timely Delivery Assurance' }
+            ]
+        },
+        securityVAPT: {
+            message: 'Security & VAPT Services:',
+            options: [
+                { id: 'assessment', text: 'Vulnerability Assessment' },
+                { id: 'testing', text: 'Penetration Testing' }
+            ]
+        },
+        uiUxDesign: {
+            message: 'UI/UX Design Services:',
+            options: [
+                { id: 'prototyping', text: 'Wireframing and Prototyping' },
+                { id: 'design', text: 'Custom UI/UX Design' }
+            ]
+        },
+        isoCertifications: {
+            message: 'ISO Certification Services:',
+            options: [
+                { id: 'iso9001', text: 'ISO 9001 Certification' },
+                { id: 'iso27001', text: 'ISO 27001 Certification' }
+            ]
+        },
+        qaAutomation: {
+            message: 'QA & Automation Services:',
+            options: [
+                { id: 'manualTesting', text: 'Manual Testing' },
+                { id: 'testAutomation', text: 'Automated Testing' }
+            ]
+        },
         mvp: {
             message: 'We help you build a minimum viable product to validate your business idea quickly and efficiently.',
             satisfaction: true
@@ -95,7 +137,49 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
         optimization: {
             message: 'Our cloud cost optimization strategies help reduce your infrastructure expenses.',
             satisfaction: true
+        },
+        planning: {
+            message: 'We offer comprehensive project planning and execution to achieve your business objectives.',
+            satisfaction: true
+        },
+        delivery: {
+            message: 'Our proven methodologies ensure timely delivery of your projects with exceptional quality.',
+            satisfaction: true
+        },
+        assessment: {
+            message: 'We identify vulnerabilities in your IT infrastructure to mitigate potential risks.',
+            satisfaction: true
+        },
+        testing: {
+            message: 'Our penetration testing services simulate real-world attacks to strengthen your security.',
+            satisfaction: true
+        },
+        prototyping: {
+            message: 'We create wireframes and prototypes to visualize your product before development.',
+            satisfaction: true
+        },
+        design: {
+            message: 'Our team delivers custom UI/UX designs that prioritize user satisfaction and brand identity.',
+            satisfaction: true
+        },
+        iso9001: {
+            message: 'We assist your organization in obtaining ISO 9001 certification for quality management systems.',
+            satisfaction: true
+        },
+        iso27001: {
+            message: 'Our experts guide you through the process of ISO 27001 certification for information security.',
+            satisfaction: true
+        },
+        manualTesting: {
+            message: 'We perform detailed manual testing to ensure your application meets quality standards.',
+            satisfaction: true
+        },
+        testAutomation: {
+            message: 'Our automated testing services enhance efficiency and accelerate the development process.',
+            satisfaction: true
         }
+        
+        
     };
 
     const styles = {
@@ -340,7 +424,9 @@ const SupportModal = ({ showModal, handleCloseModal }) => {
                             required
                         />
                         <label htmlFor="privacyPolicy">
-                            I agree to the privacy policy
+                            I agree to the  <Link to="/Privacy-Policy" className="font-semibold text-indigo-600">
+                                                privacy policy
+                                              </Link>
                         </label>
                     </div>
                     <button 

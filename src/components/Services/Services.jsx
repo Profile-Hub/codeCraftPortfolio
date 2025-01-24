@@ -17,7 +17,7 @@ import slideimg7 from "../../assets/brands/filter.png";
 import ScrollToSupport from "../BrandsLogo/scrollToTop";
 
 
-import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther } from "react-icons/md";
+import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther,MdOutlineManageAccounts,MdSecurity ,MdVerified,MdOutlineCategory} from "react-icons/md";
 const skillsData = [
      {
        name: "App Development",
@@ -75,9 +75,47 @@ const skillsData = [
         "Code Craft Consulting offers cutting-edge IoT Development services to help businesses connect and automate devices for smarter operations. From prototyping IoT-enabled hardware to building secure and scalable IoT platforms, we specialize in designing solutions that integrate seamlessly with your existing systems. Our expertise in IoT protocols, cloud integration, and real-time analytics ensures optimized performance and enhanced productivity, enabling you to unlock the full potential of IoT technology for your business.",
       aosDelay: "1300",
     },
-    
-   
-   ];
+    {
+      name: "Program Management",
+      icon: <MdOutlineManageAccounts className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Streamline your projects with Code Craft Consulting's Program Management services. Our team specializes in end-to-end project planning, execution, and delivery, ensuring alignment with your business goals. From risk assessment to stakeholder communication, we use proven methodologies to drive efficiency and achieve measurable outcomes for your organization.",
+      aosDelay: "1400",
+    },
+    {
+      name: "Security & VAPT",
+      icon: <MdSecurity className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Protect your business with Code Craft Consulting's Security and Vulnerability Assessment & Penetration Testing (VAPT) services. We identify and mitigate potential risks in your IT infrastructure, applications, and networks. Our comprehensive approach includes vulnerability scanning, threat modeling, and detailed reporting to safeguard your critical assets and ensure compliance with industry standards.",
+      aosDelay: "1500",
+    },
+    {
+      name: "Product Management",
+      icon: <MdOutlineCategory className="text-4xl text-primary" />,
+      link: "#",
+      description:
+          "Drive innovation and deliver value with Code Craft Consulting's Product Management services. We specialize in defining product strategies, managing roadmaps, and ensuring successful product launches. Our team works closely with stakeholders to align business goals with customer needs, delivering market-ready solutions that exceed expectations.",
+      aosDelay: "1700",
+    },
+    {
+      name: "UI/UX Design",
+      icon: <MdDesignServices className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Enhance user satisfaction with Code Craft Consulting's UI/UX Design services. We create intuitive, engaging, and visually appealing designs tailored to your brand identity. Our team focuses on user-centered design principles, ensuring seamless navigation, accessibility, and an exceptional user experience across all platforms.",
+      aosDelay: "1600",
+    },
+    {
+      name: "ISO Certifications",
+      icon: <MdVerified className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Achieve compliance and enhance credibility with Code Craft Consulting's ISO Certification services. We provide end-to-end assistance in obtaining ISO certifications, including ISO 9001, ISO 27001, and more. Our experts guide you through the entire process, from documentation and implementation to audits, ensuring your organization meets global standards.",
+      aosDelay: "1700",
+    },
+  ];
 const Services = () => {
   const settings_client = {
     dots: false,

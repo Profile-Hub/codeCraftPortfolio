@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../Testimonial/ScrollToTop ";
 
@@ -45,12 +45,12 @@ const Footer = () => {
               <br />
               {/* Social Handles */}
               <div className="flex items-center gap-4 mt-6">
-                <a href="#">
-                  <FaInstagram className="text-2xl hover:text-primary duration-300" />
-                </a>
-                <a href="#">
-                  <FaFacebook className="text-2xl hover:text-primary duration-300" />
-                </a>
+              <a href="https://wa.me/919654596949" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="text-2xl hover:text-primary duration-300" />
+              </a>
+              <a href="mailto:support@codecraftconsulting.in">
+                <FaEnvelope className="text-2xl hover:text-primary duration-300" />
+              </a>
                 <a
                   href="https://www.linkedin.com/company/code-craft-consulting/about/"
                   target="blank"
