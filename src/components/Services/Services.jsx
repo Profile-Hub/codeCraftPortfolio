@@ -17,7 +17,7 @@ import slideimg7 from "../../assets/brands/filter.png";
 import ScrollToSupport from "../BrandsLogo/scrollToTop";
 
 
-import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther,MdOutlineManageAccounts,MdSecurity ,MdVerified,MdOutlineCategory} from "react-icons/md";
+import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther,MdOutlineManageAccounts,MdSecurity ,MdVerified,MdOutlineCategory,MdOutlineCampaign,MdCreate} from "react-icons/md";
 const skillsData = [
      {
        name: "App Development",
@@ -115,6 +115,23 @@ const skillsData = [
         "Achieve compliance and enhance credibility with Code Craft Consulting's ISO Certification services. We provide end-to-end assistance in obtaining ISO certifications, including ISO 9001, ISO 27001, and more. Our experts guide you through the entire process, from documentation and implementation to audits, ensuring your organization meets global standards.",
       aosDelay: "1700",
     },
+    {
+      name: "Digital Marketing",
+      icon: <MdOutlineCampaign className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Grow your online presence with Code Craft Consulting's Digital Marketing services. We specialize in SEO, SEM, social media marketing, and email campaigns to help you connect with your audience and achieve your business goals.",
+      aosDelay: "1800",
+    },
+    {
+      name: "Content Creation",
+      icon: <MdCreate className="text-4xl text-primary" />, 
+      link: "#",
+      description:
+        "Elevate your brand with Code Craft Consulting's Content Creation services. From blogs and articles to video content and infographics, our team crafts compelling content tailored to your audience, ensuring maximum engagement and impact.",
+      aosDelay: "1900",
+    },
+    
   ];
 const Services = () => {
   const settings_client = {

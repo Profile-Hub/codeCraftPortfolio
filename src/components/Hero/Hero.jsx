@@ -9,7 +9,7 @@ import { SlNote } from "react-icons/sl";
 import serviceImg from '../../assets/website/download (1).jpg'
 import BrandsLogo from "../BrandsLogo/BrandsLogo";
 import { Link } from "react-router-dom";
-import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther,MdOutlineManageAccounts,MdSecurity ,MdVerified,MdOutlineCategory} from "react-icons/md";
+import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther,MdOutlineManageAccounts,MdSecurity ,MdVerified,MdOutlineCategory,MdCreate,MdOutlineCampaign} from "react-icons/md";
 import SupportModal from "../BrandsLogo/SupportModal";
 const Hero = () => {
   const [count, setcount] = useState(false);
@@ -111,6 +111,23 @@ const Hero = () => {
           "Achieve compliance and enhance credibility with Code Craft Consulting's ISO Certification services. We provide end-to-end assistance in obtaining ISO certifications, including ISO 9001, ISO 27001, and more. Our experts guide you through the entire process, from documentation and implementation to audits, ensuring your organization meets global standards.",
         aosDelay: "1700",
       },
+      {
+        name: "Digital Marketing",
+        icon: <MdOutlineCampaign className="text-4xl text-primary" />, 
+        link: "#",
+        description:
+          "Grow your online presence with Code Craft Consulting's Digital Marketing services. We specialize in SEO, SEM, social media marketing, and email campaigns to help you connect with your audience and achieve your business goals.",
+        aosDelay: "1800",
+      },
+      {
+        name: "Content Creation",
+        icon: <MdCreate className="text-4xl text-primary" />, 
+        link: "#",
+        description:
+          "Elevate your brand with Code Craft Consulting's Content Creation services. From blogs and articles to video content and infographics, our team crafts compelling content tailored to your audience, ensuring maximum engagement and impact.",
+        aosDelay: "1900",
+      },
+      
     ];
   return (
     <div>
@@ -149,14 +166,22 @@ const Hero = () => {
                 Your trusted partner in creating custom applications and websites that combine innovation, functionality, and design excellence.
                 Revolutionize your brand with software solutions and web services designed to maximize efficiency and amplify impact.
               </p>
-              {/* <button
+              <button
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-offset="0"
               className="primary-btn"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/company/code-craft-consulting/posts/?feedView=all",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
             >
               Learn More
-            </button> */}
+            </button>
+
             </div>
           </div>
         </div>

@@ -95,7 +95,7 @@ const Aboutus = () => {
                   in an ever-evolving digital landscape.
                 </p>
                 <a
-                  href="https://www.linkedin.com/showcase/code-craftconsulting/about/?viewAsMember=true"
+                  href="https://www.linkedin.com/company/code-craft-consulting/posts/?feedView=all"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-main btn-round-full"

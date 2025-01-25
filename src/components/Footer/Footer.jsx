@@ -10,8 +10,10 @@ const FooterLinks = [
 ];
 
 const HelpLinks = [
-  { title: "Customer Support", link: "/#support" },
-  { title: "Delivery Details", link: "/#delivery-details" },
+  { 
+    title: "Customer Support", 
+    link: "mailto:support@codecraftconsulting.in" 
+  },
   { title: "Terms & Conditions", link: "/term-Condition" },
   { title: "Privacy Policy", link: "/Privacy-Policy" },
 ];
@@ -95,6 +97,13 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
+              <div className="col-span-2 py-4 mt-6 border-t border-gray-300 text-center">
+                <p className="text-gray-500">
+                  Copyright © 2025 Code Craft Consulting
+                </p>
+              </div>
+
+
               {/* <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
                   Resources
