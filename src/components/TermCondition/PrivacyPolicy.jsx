@@ -177,7 +177,7 @@ const PrivacyPolicy = () => {
                                     <br />
                                     If you have any questions or suggestions about our
                                     Privacy Policy, do not hesitate to contact us at  <a href="tel:9654596949" className='pointer'> <span className='pointer text-black'>+91 9654596949</span></a> or email us at
-                                    <a href="mailto:sanjit@codecraftconsulting.in" className="pointer">sanjit@codecraftconsulting.in</a>.
+                                    <a href="mailto:support@codecraftconsulting.in" className="pointer">support@codecraftconsulting.in</a>.
                                 </p>
                             </div>
                         </ol> </div>
@@ -191,7 +191,7 @@ const PrivacyPolicy = () => {
             <h1 className='h1head'>Ask us anything</h1>
             <p>Don't hesitate to ask your questions. We're happy to provide you the solution.</p>
             <div className='help-details'>
-            <p><strong>Support :</strong> <a href="mailto:sanjit@codecraftconsulting.in">sanjit@codecraftconsulting.in</a></p>
+            <p><strong>Support :</strong> <a href="mailto:support@codecraftconsulting.in">support@codecraftconsulting.in</a></p>
             <p><strong>Contact :</strong> <a href="tel:+919654596949">+919654596949</a></p>
             <p><strong>Site :</strong> <a href="https://codecraftconsulting.in" target="_blank">codecraftconsulting.in</a></p>
         </div>

@@ -17,54 +17,54 @@ import slideimg7 from "../../assets/brands/filter.png";
 import ScrollToSupport from "../BrandsLogo/scrollToTop";
 
 
-import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther,MdOutlineManageAccounts,MdSecurity ,MdVerified,MdOutlineCategory,MdOutlineCampaign,MdCreate} from "react-icons/md";
+import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther,MdOutlineManageAccounts,MdSecurity ,MdVerified,MdOutlineCategory,MdOutlineCampaign,MdCreate,MdPeople,MdSupport} from "react-icons/md";
 const skillsData = [
-     {
-       name: "App Development",
-       icon: <MdDeveloperMode className="text-4xl text-primary" />, 
-       link: "#",
-       description:
-       "Code Craft Consulting specializes in web development services, focusing on designing, building, and maintaining high-performance, scalable, and secure websites and web applications. We work closely with clients to understand their unique business needs, functionality, and performance. From custom website design to full-stack development, we leverage the latest technologies and frameworks to create dynamic, responsive, and user-friendly websites. Our team ensures that every project aligns with business goals, is optimized for speed, and provides a seamless experience across all devices."
-        ,aosDelay: "0",
-     },
-     {
-       name: "Web Development",
-       icon: <MdWeb className="text-4xl text-primary" />, 
-       link: "#",
-       description:
-       "Code Craft Consulting offers comprehensive web development services to build dynamic, secure, and scalable websites tailored to meet unique business needs. Combining cutting-edge technologies and industry best practices, our team specializes in creating responsive, user-friendly, and high-performance websites. From front-end development with sleek, intuitive interfaces to robust back-end solutions, we ensure seamless functionality and integration. Our expertise includes custom web applications, all designed to align with your brand identity, optimize user experience, and drive growth."
-        ,aosDelay: "300",
-     },
-     {
-       name: "Cloud Cost Reduction",
-       icon: <MdCloudQueue className="text-4xl text-primary" />, 
-       link: "#",
-       description:
-         "At Code Craft Consulting, we specialize in helping businesses optimize their cloud infrastructure to reduce costs without compromising performance. Our team of experts analyzes your current cloud usage, identifies inefficiencies, and implements strategies to minimize expenses while ensuring scalability and reliability. By leveraging advanced tools and best practices, we ensure your cloud operations are both cost-effective and future-ready. Trust Code Craft Consulting to deliver measurable savings and enhanced cloud efficiency for your organization.",
-       aosDelay: "700",
-     },
-     {
-       name: "QA and Automation",
-       icon: <MdDesignServices className="text-4xl text-primary" />,
-       link: "#",
-       description:
-       "A QA and Automation specialist focuses on ensuring software quality through meticulous testing and automated processes. They design and implement testing strategies to identify and resolve issues, ensuring optimal performance, security, and functionality. By leveraging advanced tools and methodologies, they streamline workflows, integrate with CI/CD pipelines, and maintain compliance with industry standards. From planning to execution, QA and Automation experts enhance reliability and efficiency, delivering seamless and dependable digital solutions tailored to specific business needs."
-       ,  aosDelay: "500",
-     },
-     {
+    {
+      name: "App Development",
+      icon: <MdDeveloperMode className="text-4xl text-primary" />, 
+      link: "#",
+      description:
+        "Build scalable, secure, and high-performance mobile apps tailored to your business needs with Code Craft Consulting.",
+      aosDelay: "0",
+    },
+    {
+      name: "Web Development",
+      icon: <MdWeb className="text-4xl text-primary" />, 
+      link: "#",
+      description:
+        "Develop dynamic, user-friendly websites with responsive designs and seamless functionality.",
+      aosDelay: "300",
+    },
+    {
+      name: "Cloud Cost Reduction",
+      icon: <MdCloudQueue className="text-4xl text-primary" />, 
+      link: "#",
+      description:
+        "Optimize cloud usage to reduce costs while ensuring scalability and reliability.",
+      aosDelay: "700",
+    },
+    {
+      name: "QA and Automation",
+      icon: <MdDesignServices className="text-4xl text-primary" />,
+      link: "#",
+      description:
+        "Ensure software quality and efficiency with advanced testing and automation strategies.",
+      aosDelay: "500",
+    },
+    {
       name: "AI Integration",
       icon: <MdOutlineSmartToy className="text-4xl text-primary" />,
       link: "#",
       description:
-        "Code Craft Consulting empowers businesses with AI integration services, enabling smarter automation, decision-making, and personalized experiences. Our team specializes in developing and deploying machine learning models, natural language processing systems, and computer vision solutions. By seamlessly embedding AI into your workflows and applications, we help you drive innovation, improve efficiency, and unlock the potential of intelligent technologies for your organization.",
+        "Embed AI into your workflows for smarter automation and data-driven decisions.",
       aosDelay: "900",
     },
     {
-      name: "Data Science & Data Engineering",
+      name: "Data Science & Engineering",
       icon: <MdOutlineDataUsage className="text-4xl text-primary" />,
       link: "#",
       description:
-        "At Code Craft Consulting, we help organizations leverage data as a strategic asset through our Data Science and Data Engineering services. From designing scalable data pipelines to building predictive analytics models, we deliver end-to-end solutions tailored to your business needs. Our expertise in big data platforms, cloud services, and machine learning enables us to transform raw data into actionable insights, fueling data-driven decision-making and sustainable growth for your organization.",
+        "Leverage data to drive insights with scalable pipelines and predictive models.",
       aosDelay: "1100",
     },
     {
@@ -72,7 +72,7 @@ const skillsData = [
       icon: <MdDevicesOther className="text-4xl text-primary" />,
       link: "#",
       description:
-        "Code Craft Consulting offers cutting-edge IoT Development services to help businesses connect and automate devices for smarter operations. From prototyping IoT-enabled hardware to building secure and scalable IoT platforms, we specialize in designing solutions that integrate seamlessly with your existing systems. Our expertise in IoT protocols, cloud integration, and real-time analytics ensures optimized performance and enhanced productivity, enabling you to unlock the full potential of IoT technology for your business.",
+        "Design and deploy IoT solutions to connect and automate your devices seamlessly.",
       aosDelay: "1300",
     },
     {
@@ -80,7 +80,7 @@ const skillsData = [
       icon: <MdOutlineManageAccounts className="text-4xl text-primary" />,
       link: "#",
       description:
-        "Streamline your projects with Code Craft Consulting's Program Management services. Our team specializes in end-to-end project planning, execution, and delivery, ensuring alignment with your business goals. From risk assessment to stakeholder communication, we use proven methodologies to drive efficiency and achieve measurable outcomes for your organization.",
+        "Streamline project execution with expert planning, risk management, and delivery.",
       aosDelay: "1400",
     },
     {
@@ -88,7 +88,7 @@ const skillsData = [
       icon: <MdSecurity className="text-4xl text-primary" />,
       link: "#",
       description:
-        "Protect your business with Code Craft Consulting's Security and Vulnerability Assessment & Penetration Testing (VAPT) services. We identify and mitigate potential risks in your IT infrastructure, applications, and networks. Our comprehensive approach includes vulnerability scanning, threat modeling, and detailed reporting to safeguard your critical assets and ensure compliance with industry standards.",
+        "Protect your business with vulnerability assessments and penetration testing.",
       aosDelay: "1500",
     },
     {
@@ -96,7 +96,7 @@ const skillsData = [
       icon: <MdOutlineCategory className="text-4xl text-primary" />,
       link: "#",
       description:
-          "Drive innovation and deliver value with Code Craft Consulting's Product Management services. We specialize in defining product strategies, managing roadmaps, and ensuring successful product launches. Our team works closely with stakeholders to align business goals with customer needs, delivering market-ready solutions that exceed expectations.",
+        "Define strategies, manage roadmaps, and deliver innovative products.",
       aosDelay: "1700",
     },
     {
@@ -104,7 +104,7 @@ const skillsData = [
       icon: <MdDesignServices className="text-4xl text-primary" />,
       link: "#",
       description:
-        "Enhance user satisfaction with Code Craft Consulting's UI/UX Design services. We create intuitive, engaging, and visually appealing designs tailored to your brand identity. Our team focuses on user-centered design principles, ensuring seamless navigation, accessibility, and an exceptional user experience across all platforms.",
+        "Create intuitive and engaging designs for seamless user experiences.",
       aosDelay: "1600",
     },
     {
@@ -112,15 +112,15 @@ const skillsData = [
       icon: <MdVerified className="text-4xl text-primary" />,
       link: "#",
       description:
-        "Achieve compliance and enhance credibility with Code Craft Consulting's ISO Certification services. We provide end-to-end assistance in obtaining ISO certifications, including ISO 9001, ISO 27001, and more. Our experts guide you through the entire process, from documentation and implementation to audits, ensuring your organization meets global standards.",
+        "Achieve compliance with ISO certifications for global standards.",
       aosDelay: "1700",
     },
     {
       name: "Digital Marketing",
-      icon: <MdOutlineCampaign className="text-4xl text-primary" />,
+      icon: <MdOutlineCampaign className="text-4xl text-primary" />, 
       link: "#",
       description:
-        "Grow your online presence with Code Craft Consulting's Digital Marketing services. We specialize in SEO, SEM, social media marketing, and email campaigns to help you connect with your audience and achieve your business goals.",
+        "Boost your online presence with SEO, social media, and targeted campaigns.",
       aosDelay: "1800",
     },
     {
@@ -128,11 +128,27 @@ const skillsData = [
       icon: <MdCreate className="text-4xl text-primary" />, 
       link: "#",
       description:
-        "Elevate your brand with Code Craft Consulting's Content Creation services. From blogs and articles to video content and infographics, our team crafts compelling content tailored to your audience, ensuring maximum engagement and impact.",
+        "Engage your audience with compelling blogs, videos, and infographics.",
       aosDelay: "1900",
     },
-    
+    {
+      name: "Hiring (Tech & Non-Tech)",
+      icon: <MdPeople className="text-4xl text-primary" />, 
+      link: "#",
+      description:
+        "Find the right talent for tech and non-tech roles to fuel your growth.",
+      aosDelay: "2100",
+    },
+    {
+      name: "Finance, HR & Tech Support",
+      icon: <MdSupport className="text-4xl text-primary" />, 
+      link: "#",
+      description:
+        "Simplify operations with expert finance, HR, and tech support solutions.",
+      aosDelay: "2300",
+    },
   ];
+  
 const Services = () => {
   const settings_client = {
     dots: false,
