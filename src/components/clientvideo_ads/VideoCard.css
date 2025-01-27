@@ -1,0 +1,85 @@
+.video-card-outer-box {
+  width: 48%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #d9d3d3;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.video-card-box {
+  width: 100%;
+  height: 100%;
+}
+
+.video-card {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #000; /* First border */
+  border-radius: 15px; /* First border-radius */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow */
+  overflow: hidden; /* Ensures that nothing overflows the box */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.video-card-thumbnail {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-bottom: 3px solid #000; /* Second border */
+  position: relative; /* Allows absolute positioning for the play icon */
+}
+
+.video-card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-card-video {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; /* Second border-radius */
+}
+
+@media (max-width: 900px) {
+  .video-card-outer-box {
+    width: 80%;
+  }
+}
+
+/* For mobile view */
+@media (max-width: 480px) {
+  .video-card-outer-box {
+    width: 100%;
+  }
+}
