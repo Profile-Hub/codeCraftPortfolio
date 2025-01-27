@@ -11,6 +11,9 @@ import BrandsLogo from "../BrandsLogo/BrandsLogo";
 import { Link } from "react-router-dom";
 import { MdDeveloperMode, MdWeb, MdCloudQueue, MdDesignServices,MdOutlineSmartToy,MdOutlineDataUsage,MdDevicesOther,MdOutlineManageAccounts,MdSecurity ,MdVerified,MdOutlineCategory,MdCreate,MdOutlineCampaign,MdPeople,MdSupport} from "react-icons/md";
 import SupportModal from "../BrandsLogo/SupportModal";
+import slideimg7 from "../../assets/website/tumbnel.png";
+import vedio from "../../assets/website/vediomedo.mp4"
+import VideoCard from "../clientvideo_ads/VideoCard";
 const Hero = () => {
   const [count, setcount] = useState(false);
   
@@ -333,7 +336,18 @@ const Hero = () => {
                   <img src={serviceImg} alt="" />
                 </div>
               </div>
-            </div>
+              
+            </div> 
+            <div className="Vedio-head"><h1>""Connect Seamlessly Across Devices iOS & Android": Watch the Demo!"
+</h1></div>        
+            <div className="video-component">
+   
+            <VideoCard
+                      thumbnail={slideimg7}
+                      videoSrc={vedio}
+                    />
+                   </div>
+
           </div>
         </div>
       </div>

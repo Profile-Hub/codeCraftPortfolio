@@ -8,8 +8,19 @@
     box-sizing: border-box;
   }
   
- 
-  
+ .video-component{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+  .Vedio-head{
+    margin-top: 2rem;
+  }
+  .Vedio-head h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+   
+  }
 /* Outer box styles */
 .outer-box {
   width: 100%;
@@ -86,7 +97,11 @@
   .outer-box {
       padding: 10px;
   }
-
+  .Vedio-head h1{
+    font-size: 1rem;
+    font-weight: 700;
+   
+  }
   .inner-box1,
   .inner-box2 {
       margin-bottom: 0.5rem; /* Adjust spacing for very small screens */
