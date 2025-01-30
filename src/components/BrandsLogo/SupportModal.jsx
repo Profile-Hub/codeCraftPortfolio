@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 
-import img from '../../assets/website/Vector.svg';
+import img from '../../assets/website/codecraft.png';
 import { Link } from 'react-router-dom';
 
 
