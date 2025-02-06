@@ -29,9 +29,7 @@ const VideoCard = ({ thumbnail, videoSrc }) => {
               <div className="video-card-video">
                 <video
               controls
-              playsInline  
-              muted         
-              autoPlay     
+              playsInline          
               src={videoSrc}
               poster={thumbnail}
             >
