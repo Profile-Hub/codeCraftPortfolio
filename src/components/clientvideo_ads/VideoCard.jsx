@@ -27,10 +27,16 @@ const VideoCard = ({ thumbnail, videoSrc }) => {
               </>
             ) : (
               <div className="video-card-video">
-                <video controls autoPlay>
-                  <source src={videoSrc} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <video
+              controls
+              playsInline  
+              muted         
+              autoPlay     
+              src={videoSrc}
+              poster={thumbnail}
+            >
+              Your browser does not support the video tag.
+            </video>
               </div>
             )}
           </div>
