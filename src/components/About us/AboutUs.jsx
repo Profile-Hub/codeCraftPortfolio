@@ -124,7 +124,7 @@ const Aboutus = () => {
 
       {/* Section B part start */}
       <div className='creater'>
-        <h1 className='content-title title-founder-head'>Our Founder</h1>
+        <h1 className='content-title title-founder-head'>Investor & Mentor  </h1>
       </div>
       <div className='ceo-quotes'>
         <div className='cover-ceo'>
@@ -147,7 +147,7 @@ const Aboutus = () => {
             </p>
 
             <h2 className="mt-2 mb-1 position-relative content-title text-gray name-font content-title">Sanjit Singh</h2>
-            <p className='text-gray founder-font founder-font '><strong>CEO</strong></p>
+            <p className='text-gray founder-font founder-font '><strong>Investor & Mentor            </strong></p>
             <a href="https://www.linkedin.com/in/sanjit-s-a033a564/" target="_blank" className="pointer text-gray-700"><LinkedInIcon/>Linkedin</a>
 
           </div>
