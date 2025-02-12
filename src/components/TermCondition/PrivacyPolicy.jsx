@@ -192,7 +192,7 @@ const PrivacyPolicy = () => {
             <p>Don't hesitate to ask your questions. We're happy to provide you the solution.</p>
             <div className='help-details'>
             <p><strong>Support :</strong> <a href="mailto:support@codecraftconsulting.in">support@codecraftconsulting.in</a></p>
-            <p><strong>Contact :</strong> <a href="tel:+919654596949">+919654596949</a></p>
+            {/* <p><strong>Contact :</strong> <a href="tel:+919654596949">+919654596949</a></p> */}
             <p><strong>Site :</strong> <a href="https://codecraftconsulting.in" target="_blank">codecraftconsulting.in</a></p>
         </div>
         </div>

@@ -36,19 +36,19 @@ const Navbar = () => {
       <div className="navigate">
 
         <ul className="nav">
-          <li className="email">
+          {/* <li className="email">
             <a href="https://wa.me/919654596949?text=Hello%20from%20your%20website" target="_blank">
               <i className="fab fa-whatsapp fa-brands what phone"></i> <button>Contact Us on WhatsApp</button>
             </a>
-          </li>
+          </li> */}
           <li className="email">
             <span className="material-symbols-outlined phone gmail">mail</span>
             <a href="mailto:support@codecraftconsulting.in" className="pointer">support@codecraftconsulting.in</a>
           </li>
-          <li className="email">
+          {/* <li className="email">
             <span className="material-symbols-outlined phone call">call</span>
             <a href="tel:+919654596949" className="pointer text-gray-700">Call Us: +91 9654596949</a>
-          </li>
+          </li> */}
         </ul>
 
         <div id="navbar" >

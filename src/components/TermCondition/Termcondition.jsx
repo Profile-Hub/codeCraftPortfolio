@@ -118,7 +118,7 @@ const Termcondition = () => {
                                         For any questions or concerns regarding these Terms and Conditions, please contact us at:
                                         </p>
                                         <li className="semi_list"><b>Email:</b>support@codecraftconsulting.in</li>
-                                        <li className="semi_list"><b>Phone:</b>+91 9654596949</li>
+                                        {/* <li className="semi_list"><b>Phone:</b>+91 9654596949</li> */}
                                         
                                     </div>
                                 </ol> </div>
