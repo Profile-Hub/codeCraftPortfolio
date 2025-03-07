@@ -123,7 +123,7 @@ const Aboutus = () => {
       {/* Section A part End */}
 
       {/* Section B part start */}
-      <div className='creater'>
+      {/* <div className='creater'>
         <h1 className='content-title title-founder-head'>Investor & Mentor  </h1>
       </div>
       <div className='ceo-quotes'>
@@ -152,7 +152,7 @@ const Aboutus = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Section B part End */}
 
@@ -263,7 +263,7 @@ const Aboutus = () => {
               >
                 <button className="primary-btn">Learn More</button>
 
-                <BrandsLogo />
+                {/* <BrandsLogo /> */}
 
 
 
@@ -274,13 +274,13 @@ const Aboutus = () => {
       </section>
       {/* Section vision part End */}
       {/* Section D part start */}
-      <section className="section team">
+      {/* <section className="section team">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-7 text-center">
               <div className="section-title">
                 <span className="h3 text-color content-title">Our Founding Engineers</span>
-                {/* <h1 className="mt-3 content-title">Expert Team profileber to get best service</h1> */}
+                <h1 className="mt-3 content-title">Expert Team profileber to get best service</h1> 
               </div>
               <div className="founded">
                 <div className="card" style={{ width: "18rem" }}>
@@ -313,7 +313,7 @@ const Aboutus = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <div className='container '> */}
 
 
